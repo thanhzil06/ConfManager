@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PCFG_SYS</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>Systems</SHORT-NAME>
+                  <ELEMENTS>
+                    <SYSTEM>
+                      <SHORT-NAME>SystemExtract</SHORT-NAME>
+                      <CATEGORY>SYSTEM_EXTRACT</CATEGORY>
+                      <MAPPINGS>
+                        <SYSTEM-MAPPING>
+                          <SHORT-NAME>SystemExtractMapping</SHORT-NAME>
+                          <SW-IMPL-MAPPINGS>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_NvM</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/AUTOSAR_NvM/SwcImplementations/NvM</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_NvM</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_Dcm</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/AUTOSAR_Dcm/SwcImplementations/Impl_Dcm</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_Dcm</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_IoDiagPs</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/RBA/rba_IoDiagPs/SwcImplementations/rba_IoDiagPs</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_rba_IoDiagPs</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_IoDiagPwr</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/RBA/rba_IoDiagPwr/SwcImplementations/rba_IoDiagPwr</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_rba_IoDiagPwr</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_IoSigAdc</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/RBA/rba_IoSigAdc/SwcImplementations/rba_IoSigAdc</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_rba_IoSigAdc</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_IoSigDio</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/RBA/rba_IoSigDio/SwcImplementations/rba_IoSigDio</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_rba_IoSigDio</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_IoSigIcu</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/RBA/rba_IoSigIcu/SwcImplementations/rba_IoSigIcu</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_rba_IoSigIcu</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_IoSigObs</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/RBA/rba_IoSigObs/SwcImplementations/rba_IoSigObs</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_rba_IoSigObs</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_IoSigPwm</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/RBA/rba_IoSigPwm/SwcImplementations/rba_IoSigPwm</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_rba_IoSigPwm</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_IoSigPwr</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/RBA/rba_IoSigPwr/SwcImplementations/rba_IoSigPwr</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_rba_IoSigPwr</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_IoSigRtc</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/RBA/rba_IoSigRtc/SwcImplementations/rba_IoSigRtc</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_rba_IoSigRtc</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                            <SWC-TO-IMPL-MAPPING>
+                              <SHORT-NAME>SwcToImplMapping_ComM</SHORT-NAME>
+                              <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/AUTOSAR_ComM/SwcImplementations/ComM_Imp</COMPONENT-IMPLEMENTATION-REF>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_ComM</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                            </SWC-TO-IMPL-MAPPING>
+                          </SW-IMPL-MAPPINGS>
+                          <SW-MAPPINGS>
+                            <SWC-TO-ECU-MAPPING>
+                              <SHORT-NAME>SwcToMDG1Mapping</SHORT-NAME>
+                              <COMPONENT-IREFS>
+                                <COMPONENT-IREF>
+                                  <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-COMPOSITION-REF>
+                                  <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/FCACompositions/RootProject/RootProject/TopLvlComposition</TARGET-COMPONENT-REF>
+                                </COMPONENT-IREF>
+                              </COMPONENT-IREFS>
+                              <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/RB/PT/PCFG_SYS/EcuInstances/MDG1</ECU-INSTANCE-REF>
+                            </SWC-TO-ECU-MAPPING>
+                          </SW-MAPPINGS>
+                        </SYSTEM-MAPPING>
+                      </MAPPINGS>
+                      <ROOT-SOFTWARE-COMPOSITIONS>
+                        <ROOT-SW-COMPOSITION-PROTOTYPE>
+                          <SHORT-NAME>RootProject</SHORT-NAME>
+                          <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/FCACompositions/RootProject/RootProject</SOFTWARE-COMPOSITION-TREF>
+                        </ROOT-SW-COMPOSITION-PROTOTYPE>
+                      </ROOT-SOFTWARE-COMPOSITIONS>
+                    </SYSTEM>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

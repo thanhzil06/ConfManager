@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00048.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>SWCompositions</SHORT-NAME>
+          <ELEMENTS>
+            <COMPOSITION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>IoSigPwr_SwSStellantisCmpstn</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE>
+                  <SHORT-NAME>VeSPLR_b_BattDiscnctSts</SHORT-NAME>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_EcuAb/VeSPLR_b_BattDiscnctSts</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+				<P-PORT-PROTOTYPE>
+                  <SHORT-NAME>VeSPLR_g_PwrSplyInfo</SHORT-NAME>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASWCs/OnBdDevAb/PwrSply/If/VeSPLR_g_PwrSplyInfo</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+				<P-PORT-PROTOTYPE>
+                  <SHORT-NAME>VeSPLR_b_PwrSplyDiagInfo</SHORT-NAME>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/FCASharedInterfaces/IFCOEs/IFPlatform_Srv/VeSPLR_b_PwrSplyDiagInfo</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+				<P-PORT-PROTOTYPE>
+                  <SHORT-NAME>PwrSplyOps</SHORT-NAME>
+                  <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/FCASWCs/OnBdDevAb/PwrSply/If/IFPwrSplyOps</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+              </PORTS>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>IoSigPwr_SwSStellantis</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/RB/PT/PCT_IoSigPwr_SwSStellantis/SwComponentTypes/IoSigPwr_SwSStellantis</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+              <CONNECTORS>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>DSC_VeSPLR_b_BattDiscnctSts_IoSigPwr_SwSStellantis_VeSPLR_b_BattDiscnctSts</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/SWCompositions/IoSigPwr_SwSStellantisCmpstn/IoSigPwr_SwSStellantis</CONTEXT-COMPONENT-REF>
+                      <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/PT/PCT_IoSigPwr_SwSStellantis/SwComponentTypes/IoSigPwr_SwSStellantis/VeSPLR_b_BattDiscnctSts</TARGET-P-PORT-REF>
+                    </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/SWCompositions/IoSigPwr_SwSStellantisCmpstn/VeSPLR_b_BattDiscnctSts</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+				<DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>DSC_VeSPLR_g_PwrSplyInfo_IoSigPwr_SwSStellantis_VeSPLR_g_PwrSplyInfo</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/SWCompositions/IoSigPwr_SwSStellantisCmpstn/IoSigPwr_SwSStellantis</CONTEXT-COMPONENT-REF>
+                      <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/PT/PCT_IoSigPwr_SwSStellantis/SwComponentTypes/IoSigPwr_SwSStellantis/VeSPLR_g_PwrSplyInfo</TARGET-P-PORT-REF>
+                    </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/SWCompositions/IoSigPwr_SwSStellantisCmpstn/VeSPLR_g_PwrSplyInfo</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+				<DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>DSC_VeSPLR_b_PwrSplyDiagInfo_IoSigPwr_SwSStellantis_VeSPLR_b_PwrSplyDiagInfo</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/SWCompositions/IoSigPwr_SwSStellantisCmpstn/IoSigPwr_SwSStellantis</CONTEXT-COMPONENT-REF>
+                      <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/PT/PCT_IoSigPwr_SwSStellantis/SwComponentTypes/IoSigPwr_SwSStellantis/VeSPLR_b_PwrSplyDiagInfo</TARGET-P-PORT-REF>
+                    </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/SWCompositions/IoSigPwr_SwSStellantisCmpstn/VeSPLR_b_PwrSplyDiagInfo</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+				
+				<DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>DSC_PwrSplyOps_IoSigPwr_SwSStellantis_PwrSplyOps</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/SWCompositions/IoSigPwr_SwSStellantisCmpstn/IoSigPwr_SwSStellantis</CONTEXT-COMPONENT-REF>
+                      <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/PT/PCT_IoSigPwr_SwSStellantis/SwComponentTypes/IoSigPwr_SwSStellantis/PwrSplyOps</TARGET-P-PORT-REF>
+                    </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/SWCompositions/IoSigPwr_SwSStellantisCmpstn/PwrSplyOps</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+              </CONNECTORS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

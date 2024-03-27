@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PCT_MDG1_FlatMap</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>FlatMaps</SHORT-NAME>
+                  <ELEMENTS>
+                    <FLAT-MAP>
+                      <SHORT-NAME>MDG1_FlatMap</SHORT-NAME>
+                      <INSTANCES>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>AC_CluRlyDigOutp</SHORT-NAME>
+                          <UPSTREAM-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/FCACompositions/RootProject/RootProject/TopLvlComposition</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_IoSigDioOutp_SwSStellantisCmpstn</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/SWCompositions/IoSigDioOutp_SwSStellantisCmpstn/AC_CluRlyDigOutp</TARGET-REF>
+                          </UPSTREAM-REFERENCE-IREF>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/AC_CluRlyDigOutp</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>FiM_InhLim_OxSnsrHtrUsBnk2CircLoFlt_calibarr</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="BSW-INTERNAL-BEHAVIOR">/AUTOSAR_FiM/BswModuleDescriptions/FiM/BSWIB_FiM</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="PARAMETER-DATA-PROTOTYPE">/AUTOSAR_FiM/BswModuleDescriptions/FiM/BSWIB_FiM/FiM_InhLim_OxSnsrHtrUsBnk2CircLoFlt_calibarr</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                      </INSTANCES>
+                    </FLAT-MAP>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PCT_MDG1_FlatView</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>SwComponentTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPOSITION-SW-COMPONENT-TYPE>
+                      <SHORT-NAME>MDG1_FlatView</SHORT-NAME>
+                      <COMPONENTS>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>CPT_AVS_Std</SHORT-NAME>
+                          <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/RB/PT/MSR2AR/PCT_AVS_Std/SwComponentTypes/AVS_Std</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>CPT_BGTHDEV</SHORT-NAME>
+                          <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/RB/PT/MSR2AR/PCT_BGTHDEV/SwComponentTypes/BGTHDEV</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                      </COMPONENTS>
+                      <CONNECTORS>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>ASC_CPT_ESC_OsTskActvnHndlr_PP_ESC_OsTskActvnHndlr_AgEveE0_TRIGSRC_CPT_SWAdp_RP_ESC_OsTskActvnHndlr_AgEveE0_TRIGSRC</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ESC_OsTskActvnHndlr</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/PT/ESC_OsTskActvnHndlr/SwComponentTypes/ESC_OsTskActvnHndlr/PP_ESC_OsTskActvnHndlr_AgEveE0_TRIGSRC</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_SWAdp</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/RB/PT/MSR2AR/PCT_SWAdp/SwComponentTypes/SWAdp/RP_ESC_OsTskActvnHndlr_AgEveE0_TRIGSRC</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                      </CONNECTORS>
+                    </COMPOSITION-SW-COMPONENT-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

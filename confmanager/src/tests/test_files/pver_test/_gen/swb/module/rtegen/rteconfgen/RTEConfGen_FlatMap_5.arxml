@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PCT_MDG1_FlatMap</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>FlatMaps</SHORT-NAME>
+                  <ELEMENTS>
+                    <FLAT-MAP>
+                      <SHORT-NAME>MDG1_FlatMap</SHORT-NAME>
+                      <INSTANCES>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>ESC_agEveE0TskStrt</SHORT-NAME>
+                          <UPSTREAM-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_SYS/Systems/SystemExtract/RootProject</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/FCACompositions/RootProject/RootProject/TopLvlComposition</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_esc_stack</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/RB/PT/esc_stack/SwComponentTypes/esc_stack/PP_ESC_agEveE0TskStrt</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/RB/PT/esc_stack/PortInterfaces/IF_ESC_agEveE0TskStrt/ESC_agEveE0TskStrt</TARGET-REF>
+                          </UPSTREAM-REFERENCE-IREF>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_esc_stack</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/RB/PT/esc_stack/SwComponentTypes/esc_stack/PP_ESC_agEveE0TskStrt</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/RB/PT/esc_stack/PortInterfaces/IF_ESC_agEveE0TskStrt/ESC_agEveE0TskStrt</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>ESC_NRAGEVEWCYC_SC_NEQ_0_AND_ESC_NRTSKAGEVE_SC_NEQ_0</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="CODE-GENERATION-TIME">
+                              (
+                              ((
+                              <SYSC-REF DEST="SW-SYSTEMCONST">/RB/PT/Common/SwSystemconsts/Adjustables/ESC_NRAGEVEWCYC_SC</SYSC-REF>
+                              !=0) &amp;&amp; 
+                                  (
+                              <SYSC-REF DEST="SW-SYSTEMCONST">/RB/PT/Common/SwSystemconsts/Adjustables/ESC_NRTSKAGEVE_SC</SYSC-REF>
+                              !=0))
+                            )
+                            </SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                      </INSTANCES>
+                    </FLAT-MAP>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

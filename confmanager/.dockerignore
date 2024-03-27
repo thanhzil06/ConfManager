@@ -1,0 +1,13 @@
+.*
+venv/
+build/
+dist/
+*.iml
+*.md
+*.zip
+*.spec
+*.yml
+coverage.xml
+Dockerfile
+sonar.properties
+LICENSE.txt

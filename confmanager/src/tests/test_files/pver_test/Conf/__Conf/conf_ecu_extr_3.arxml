@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PCFG_ECU</SHORT-NAME>
+              <ELEMENTS>
+                <SYSTEM>
+                  <SHORT-NAME>MDG1_EXTR</SHORT-NAME>
+                  <CATEGORY>ECU_EXTRACT</CATEGORY>
+                  <MAPPINGS>
+                    <SYSTEM-MAPPING>
+                      <SHORT-NAME>SYSMPG_MDG1</SHORT-NAME>
+                      <SW-MAPPINGS>
+                        <SWC-TO-ECU-MAPPING>
+                          <SHORT-NAME>SwcToEcuMapping_0_2</SHORT-NAME>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/AC_CluRlyDigOutp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ATS_Std</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_AVS_Std</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_BGTHDEV</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                       </SWC-TO-ECU-MAPPING>
+                      </SW-MAPPINGS>
+                    </SYSTEM-MAPPING>
+                  </MAPPINGS>
+                </SYSTEM>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

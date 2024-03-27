@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-0-3.xsd">
+<!--
+ ***************************************************************************************************
+ *
+ * (C) All rights reserved by ROBERT BOSCH GMBH, STUTTGART
+ *
+ ***************************************************************************************************
+ *
+ *    __   __   ___  ___
+ *   /_ / /  / /__  /    /__/
+ *  /__/ /__/ __ / /__  /  /
+ *
+ *
+ ***************************************************************************************************
+-->
+   
+    <AR-PACKAGES>  
+    <AR-PACKAGE>
+           <SHORT-NAME>RB</SHORT-NAME>
+   
+    <AR-PACKAGES>  
+    <AR-PACKAGE>
+           <SHORT-NAME>PT</SHORT-NAME>
+   
+    <AR-PACKAGES>  
+    <AR-PACKAGE>
+           <SHORT-NAME>PCT_TopLvlComposition</SHORT-NAME>
+   
+    <AR-PACKAGES>  
+    <AR-PACKAGE>
+           <SHORT-NAME>SwComponentTypes</SHORT-NAME>
+                      
+                  <ELEMENTS>
+                    <COMPOSITION-SW-COMPONENT-TYPE>
+                       <SHORT-NAME>TopLvlComposition</SHORT-NAME>     
+                        <COMPONENTS>                                                            
+
+ 
+                       </COMPONENTS>       
+                
+                       <CONNECTORS>                       
+                         <ASSEMBLY-SW-CONNECTOR>
+                           <SHORT-NAME>AssemblySwConnector_R_DataServices_DcmDspData_1005_0</SHORT-NAME> 
+                                                                                                                     
+                                                 
+                           
+                           <MAPPING-REF DEST="VARIABLE-AND-PARAMETER-INTERFACE-MAPPING">/RB/PT/PCT_TopLvlComposition/PortInterfaceMappingSets/Dcm_PortMapping/SR_PortMapping_DcmDspData_1005_0</MAPPING-REF>                
+                           <PROVIDER-IREF>
+                             <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_ComDia_Dcm_Rte_Adapter</CONTEXT-COMPONENT-REF>
+                             <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SwComponentTypes/ComDia_Dcm_Rte_Adapter/SwComponentTypes/ComDia_Dcm_Rte_Adapter/PP_DcmTest_Timer</TARGET-P-PORT-REF>                           
+                           </PROVIDER-IREF> 
+                                              
+                           <REQUESTER-IREF>
+                             <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                             <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/R_DataServices_DcmDspData_1005_0</TARGET-R-PORT-REF>
+                           </REQUESTER-IREF>                   
+                         </ASSEMBLY-SW-CONNECTOR>
+                    </CONNECTORS>                  
+                 </COMPOSITION-SW-COMPONENT-TYPE>
+               </ELEMENTS>
+             </AR-PACKAGE>
+             <AR-PACKAGE>
+                  <SHORT-NAME>PortInterfaceMappingSets</SHORT-NAME>
+                  <ELEMENTS>
+                    <PORT-INTERFACE-MAPPING-SET>
+                    <SHORT-NAME>Dcm_PortMapping</SHORT-NAME>
+                      <PORT-INTERFACE-MAPPINGS>
+                                 
+                                                    
+                     
+                                            
+                        <VARIABLE-AND-PARAMETER-INTERFACE-MAPPING>
+                          <SHORT-NAME>SR_PortMapping_DcmDspData_1005_0</SHORT-NAME>
+                          <DATA-MAPPINGS>
+                            <DATA-PROTOTYPE-MAPPING>                            
+                              <FIRST-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspData_1005_0/Data</FIRST-DATA-PROTOTYPE-REF>                           
+                              <SECOND-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/SwComponentTypes/ComDia_Dcm_Rte_Adapter/SwComponentTypes/IF_DcmTest_Timer/DcmTest_Timer</SECOND-DATA-PROTOTYPE-REF>                           
+                            </DATA-PROTOTYPE-MAPPING>
+                          </DATA-MAPPINGS>
+                        </VARIABLE-AND-PARAMETER-INTERFACE-MAPPING> 
+                      </PORT-INTERFACE-MAPPINGS>
+                    </PORT-INTERFACE-MAPPING-SET>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+           
+            </AR-PACKAGE>
+            </AR-PACKAGES>
+           
+            </AR-PACKAGE>
+            </AR-PACKAGES>
+           
+            </AR-PACKAGE>
+            </AR-PACKAGES>
+             
+           
+</AUTOSAR>

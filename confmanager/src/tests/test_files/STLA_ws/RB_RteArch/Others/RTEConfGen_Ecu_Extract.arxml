@@ -1,0 +1,2043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PCFG_ECU</SHORT-NAME>
+              <ELEMENTS>
+                <SYSTEM>
+                  <SHORT-NAME>MDG1_EXTR</SHORT-NAME>
+                  <CATEGORY>ECU_EXTRACT</CATEGORY>
+                  <MAPPINGS>
+                    <SYSTEM-MAPPING>
+                      <SHORT-NAME>SYSMPG_MDG1</SHORT-NAME>
+                      <SW-IMPL-MAPPINGS>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_ATS_Std</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_ATS_Std/SwcImplementations/Impl_ATS_Std</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ATS_Std</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_AVS_Std</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_AVS_Std/SwcImplementations/Impl_AVS_Std</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_AVS_Std</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_BGTHDEV</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_BGTHDEV/SwcImplementations/Impl_BGTHDEV</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_BGTHDEV</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_CDShdG_GTMLib</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_CDShdG_GTMLib/SwcImplementations/Impl_CDShdG_GTMLib</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_CDShdG_GTMLib</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_CoEng_ObdSig</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_CoEng_ObdSig/SwcImplementations/Impl_CoEng_ObdSig</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_CoEng_ObdSig</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_CoEng_StAdpr</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_CoEng_StAdpr/SwcImplementations/Impl_CoEng_StAdpr</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_CoEng_StAdpr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_CoEng_StEng</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_CoEng_StEng/SwcImplementations/Impl_CoEng_StEng</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_CoEng_StEng</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_ComCo_Lyr</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_ComCo_Lyr/SwcImplementations/Impl_ComCo_Lyr</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ComCo_Lyr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_ComPtc</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_ComPtc/SwcImplementations/Impl_ComPtc</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ComPtc</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_ComScl_Appl</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_ComScl_Appl/SwcImplementations/Impl_ComScl_Appl</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ComScl_Appl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_DEVE</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_DEVE/SwcImplementations/Impl_DEVE</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_DEVE</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_DSM_Conf</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_DSM_Conf/SwcImplementations/Impl_DSM_Conf</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_DSM_Conf</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_DcmDspUDS_DID</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_DcmDspUDS_DID/SwcImplementations/Impl_DcmDspUDS_DID</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_DcmDspUDS_DID</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_DcmDspUDS_SecA</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_DcmDspUDS_SecA/SwcImplementations/Impl_DcmDspUDS_SecA</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_DcmDspUDS_SecA</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_DevLib_PwrStgState</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_DevLib_PwrStgState/SwcImplementations/Impl_DevLib_PwrStgState</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_DevLib_PwrStgState</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EGSHeatr_Acttn</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EGSHeatr_Acttn/SwcImplementations/Impl_EGSHeatr_Acttn</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_Acttn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EGSHeatr_Ctrl</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EGSHeatr_Ctrl/SwcImplementations/Impl_EGSHeatr_Ctrl</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_Ctrl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EGSHeatr_DiagPrfmnc</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EGSHeatr_DiagPrfmnc/SwcImplementations/Impl_EGSHeatr_DiagPrfmnc</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_DiagPrfmnc</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EGSHeatr_DiagWire</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EGSHeatr_DiagWire/SwcImplementations/Impl_EGSHeatr_DiagWire</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_DiagWire</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EGSHeatr_SnsrCoorn</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EGSHeatr_SnsrCoorn/SwcImplementations/Impl_EGSHeatr_SnsrCoorn</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_SnsrCoorn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EGSHeatr_SnsrTMdl</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EGSHeatr_SnsrTMdl/SwcImplementations/Impl_EGSHeatr_SnsrTMdl</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_SnsrTMdl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EGSHeatr_TiHeatrOff</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EGSHeatr_TiHeatrOff/SwcImplementations/Impl_EGSHeatr_TiHeatrOff</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_TiHeatrOff</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_ETC_Std</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_ETC_Std/SwcImplementations/Impl_ETC_Std</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ETC_Std</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EngDa_PwrEng</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EngDa_PwrEng/SwcImplementations/Impl_EngDa_PwrEng</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EngDa_PwrEng</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EnvP_DD</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EnvP_DD/SwcImplementations/Impl_EnvP_DD</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EnvP_DD</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EnvP_VDDiag</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EnvP_VDDiag/SwcImplementations/Impl_EnvP_VDDiag</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EnvP_VDDiag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmBCr_IntrCo</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmBCr_IntrCo/SwcImplementations/Impl_EpmBCr_IntrCo</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmBCr_IntrCo</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmBCr_Pos</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmBCr_Pos/SwcImplementations/Impl_EpmBCr_Pos</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmBCr_Pos</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCaS_Adap</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCaS_Adap/SwcImplementations/Impl_EpmCaS_Adap</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_Adap</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCaS_Diag</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCaS_Diag/SwcImplementations/Impl_EpmCaS_Diag</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_Diag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCaS_Meas</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCaS_Meas/SwcImplementations/Impl_EpmCaS_Meas</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_Meas</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCaS_OfsDiag</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCaS_OfsDiag/SwcImplementations/Impl_EpmCaS_OfsDiag</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_OfsDiag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCaS_RelsSigEvln</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCaS_RelsSigEvln/SwcImplementations/Impl_EpmCaS_RelsSigEvln</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_RelsSigEvln</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCaS_Seg</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCaS_Seg/SwcImplementations/Impl_EpmCaS_Seg</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_Seg</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCaS_Spd</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCaS_Spd/SwcImplementations/Impl_EpmCaS_Spd</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_Spd</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCaS_SyncnPatTi</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCaS_SyncnPatTi/SwcImplementations/Impl_EpmCaS_SyncnPatTi</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_SyncnPatTi</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCrS_Diag</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCrS_Diag/SwcImplementations/Impl_EpmCrS_Diag</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCrS_Diag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCrS_RevCnt</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCrS_RevCnt/SwcImplementations/Impl_EpmCrS_RevCnt</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCrS_RevCnt</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCrS_Seg</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCrS_Seg/SwcImplementations/Impl_EpmCrS_Seg</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCrS_Seg</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmCrS_Spd</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmCrS_Spd/SwcImplementations/Impl_EpmCrS_Spd</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCrS_Spd</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmErr_Trace</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmErr_Trace/SwcImplementations/Impl_EpmErr_Trace</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmErr_Trace</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmHAgClk_Gen</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmHAgClk_Gen/SwcImplementations/Impl_EpmHAgClk_Gen</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmHAgClk_Gen</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmHCaS_SigEval</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmHCaS_SigEval/SwcImplementations/Impl_EpmHCaS_SigEval</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmHCaS_SigEval</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmHCrS_IntHndlr</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmHCrS_IntHndlr/SwcImplementations/Impl_EpmHCrS_IntHndlr</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmHCrS_IntHndlr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmIf_Imprt</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmIf_Imprt/SwcImplementations/Impl_EpmIf_Imprt</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmIf_Imprt</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmRRS_AgDetect</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmRRS_AgDetect/SwcImplementations/Impl_EpmRRS_AgDetect</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmRRS_AgDetect</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmRRS_StopDetect</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmRRS_StopDetect/SwcImplementations/Impl_EpmRRS_StopDetect</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmRRS_StopDetect</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmSeq_EveHndlr</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmSeq_EveHndlr/SwcImplementations/Impl_EpmSeq_EveHndlr</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmSeq_EveHndlr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmSeq_StateMn</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmSeq_StateMn/SwcImplementations/Impl_EpmSeq_StateMn</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmSeq_StateMn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmSrv_Lib</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmSrv_Lib/SwcImplementations/Impl_EpmSrv_Lib</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmSrv_Lib</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmSyn_CaSPos</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmSyn_CaSPos/SwcImplementations/Impl_EpmSyn_CaSPos</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmSyn_CaSPos</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmSyn_CrSPos</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmSyn_CrSPos/SwcImplementations/Impl_EpmSyn_CrSPos</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmSyn_CrSPos</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_EpmTDC_Corrn</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_EpmTDC_Corrn/SwcImplementations/Impl_EpmTDC_Corrn</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmTDC_Corrn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_Epm_CustAdp</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_Epm_CustAdp/SwcImplementations/Impl_Epm_CustAdp</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_CustAdp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_Epm_Ini</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_Epm_Ini/SwcImplementations/Impl_Epm_Ini</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_Ini</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_Epm_OpMode</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_Epm_OpMode/SwcImplementations/Impl_Epm_OpMode</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_OpMode</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_Epm_Spd</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_Epm_Spd/SwcImplementations/Impl_Epm_Spd</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_Spd</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_Epm_SpdFeat</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_Epm_SpdFeat/SwcImplementations/Impl_Epm_SpdFeat</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_SpdFeat</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_Epm_SpdGrd</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_Epm_SpdGrd/SwcImplementations/Impl_Epm_SpdGrd</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_SpdGrd</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_FEL_EvapSysIfAdp</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_FEL_EvapSysIfAdp/SwcImplementations/Impl_FEL_EvapSysIfAdp</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_FEL_EvapSysIfAdp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_GlbDaAdapt_Adapt</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_GlbDaAdapt_Adapt/SwcImplementations/Impl_GlbDaAdapt_Adapt</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_GlbDaAdapt_Adapt</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_GlbDa_ECUOnTime</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_GlbDa_ECUOnTime/SwcImplementations/Impl_GlbDa_ECUOnTime</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_GlbDa_ECUOnTime</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_GlbDa_VinMngt</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_GlbDa_VinMngt/SwcImplementations/Impl_GlbDa_VinMngt</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_GlbDa_VinMngt</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_HEGO_Htg</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_HEGO_Htg/SwcImplementations/Impl_HEGO_Htg</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_HEGO_Htg</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_HEGO_OBDElec</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_HEGO_OBDElec/SwcImplementations/Impl_HEGO_OBDElec</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_HEGO_OBDElec</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_HEGO_Sens</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_HEGO_Sens/SwcImplementations/Impl_HEGO_Sens</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_HEGO_Sens</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IVGdiCtl_CvoAdpn</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IVGdiCtl_CvoAdpn/SwcImplementations/Impl_IVGdiCtl_CvoAdpn</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoAdpn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IVGdiCtl_CvoCsersPlausyDiag</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IVGdiCtl_CvoCsersPlausyDiag/SwcImplementations/Impl_IVGdiCtl_CvoCsersPlausyDiag</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoCsersPlausyDiag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IVGdiCtl_CvoDiag</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IVGdiCtl_CvoDiag/SwcImplementations/Impl_IVGdiCtl_CvoDiag</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoDiag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IVGdiCtl_CvoSigAcq</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IVGdiCtl_CvoSigAcq/SwcImplementations/Impl_IVGdiCtl_CvoSigAcq</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoSigAcq</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IVGdiCtl_CvoSigEvln</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IVGdiCtl_CvoSigEvln/SwcImplementations/Impl_IVGdiCtl_CvoSigEvln</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoSigEvln</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IVGdiCtl_CvoSimnErr</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IVGdiCtl_CvoSimnErr/SwcImplementations/Impl_IVGdiCtl_CvoSimnErr</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoSimnErr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IgCPrimI_AcqnAdc</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IgCPrimI_AcqnAdc/SwcImplementations/Impl_IgCPrimI_AcqnAdc</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IgCPrimI_AcqnAdc</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IgnClPs_Dia</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IgnClPs_Dia/SwcImplementations/Impl_IgnClPs_Dia</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IgnClPs_Dia</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IgnCoilDiagCoorn</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IgnCoilDiagCoorn/SwcImplementations/Impl_IgnCoilDiagCoorn</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IgnCoilDiagCoorn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IgnDD_Calcn</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IgnDD_Calcn/SwcImplementations/Impl_IgnDD_Calcn</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IgnDD_Calcn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IgnDD_ModCtrlr</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IgnDD_ModCtrlr/SwcImplementations/Impl_IgnDD_ModCtrlr</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IgnDD_ModCtrlr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_InjDDGdi</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_InjDDGdi/SwcImplementations/Impl_InjDDGdi</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjDDGdi</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_InjDDPfi</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_InjDDPfi/SwcImplementations/Impl_InjDDPfi</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjDDPfi</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_InjSyG_AdpnCdnCvo</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_InjSyG_AdpnCdnCvo/SwcImplementations/Impl_InjSyG_AdpnCdnCvo</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_AdpnCdnCvo</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_InjSyG_CalcCnvnFac</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_InjSyG_CalcCnvnFac/SwcImplementations/Impl_InjSyG_CalcCnvnFac</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_CalcCnvnFac</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_InjSyG_CoCvo</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_InjSyG_CoCvo/SwcImplementations/Impl_InjSyG_CoCvo</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_CoCvo</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_InjSyG_DdIf</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_InjSyG_DdIf/SwcImplementations/Impl_InjSyG_DdIf</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_DdIf</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_InjSyG_InjTi</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_InjSyG_InjTi/SwcImplementations/Impl_InjSyG_InjTi</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_InjTi</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_InjSyG_InjTmngAdpr</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_InjSyG_InjTmngAdpr/SwcImplementations/Impl_InjSyG_InjTmngAdpr</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_InjTmngAdpr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_InjSyG_SpCvo</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_InjSyG_SpCvo/SwcImplementations/Impl_InjSyG_SpCvo</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_SpCvo</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_InjVlvPs_ConCJ</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_InjVlvPs_ConCJ/SwcImplementations/Impl_InjVlvPs_ConCJ</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjVlvPs_ConCJ</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_InjVlvPs_Dia</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_InjVlvPs_Dia/SwcImplementations/Impl_InjVlvPs_Dia</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjVlvPs_Dia</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_Inm_MonNode</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_Inm_MonNode/SwcImplementations/Impl_Inm_MonNode</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Inm_MonNode</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_IoSigSwAdpr_SwSStellantis</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_IoSigSwAdpr_SwSStellantis/SwcImplementations/Impl_IoSigSwAdpr_SwSStellantis</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IoSigSwAdpr_SwSStellantis</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_KONCW</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_KONCW/SwcImplementations/Impl_KONCW</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_KONCW</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_KnDetControl</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_KnDetControl/SwcImplementations/Impl_KnDetControl</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_KnDetControl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_KnDetLTest</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_KnDetLTest/SwcImplementations/Impl_KnDetLTest</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_KnDetLTest</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_KnDetSigEval</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_KnDetSigEval/SwcImplementations/Impl_KnDetSigEval</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_KnDetSigEval</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_MRly_Vld2Lcy</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_MRly_Vld2Lcy/SwcImplementations/Impl_MRly_Vld2Lcy</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MRly_Vld2Lcy</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_MfDD</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_MfDD/SwcImplementations/Impl_MfDD</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MfDD</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_MfPsDia</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_MfPsDia/SwcImplementations/Impl_MfPsDia</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MfPsDia</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_MfPs_ConCY</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_MfPs_ConCY/SwcImplementations/Impl_MfPs_ConCY</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MfPs_ConCY</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_MoCADC_Co</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_MoCADC_Co/SwcImplementations/Impl_MoCADC_Co</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MoCADC_Co</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_MoCMPU_Co</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_MoCMPU_Co/SwcImplementations/Impl_MoCMPU_Co</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MoCMPU_Co</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_MoExe_Co</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_MoExe_Co/SwcImplementations/Impl_MoExe_Co</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MoExe_Co</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_MoXEMM_Co</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_MoXEMM_Co/SwcImplementations/Impl_MoXEMM_Co</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MoXEMM_Co</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_OCWDA_Co</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_OCWDA_Co/SwcImplementations/Impl_OCWDA_Co</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_OCWDA_Co</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_OilCmbdSen_DD</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_OilCmbdSen_DD/SwcImplementations/Impl_OilCmbdSen_DD</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_OilCmbdSen_DD</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_Reset_CallBack</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_Reset_CallBack/SwcImplementations/Impl_Reset_CallBack</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Reset_CallBack</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_SWAdp</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_SWAdp/SwcImplementations/Impl_SWAdp</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_SWAdp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_SWC_ComCIL_Adapt</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/ComVeh/ComCIL/ComCIL_Adapt/SwcImplementations/IMPL_ComCIL_Adapt</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ComCIL_Adapt</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_SYNTIZW</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_SYNTIZW/SwcImplementations/Impl_SYNTIZW</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_SYNTIZW</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_SrvB</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_SrvB/SwcImplementations/Impl_SrvB</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_SrvB</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_SyC_Vld2Lcy</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_SyC_Vld2Lcy/SwcImplementations/Impl_SyC_Vld2Lcy</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_SyC_Vld2Lcy</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_T15_Vld2Lcy</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_T15_Vld2Lcy/SwcImplementations/Impl_T15_Vld2Lcy</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_T15_Vld2Lcy</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_Dac</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_Dac/SwcImplementations/Impl_UEGO_Dac</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_Dac</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_DiagRels</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_DiagRels/SwcImplementations/Impl_UEGO_DiagRels</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagRels</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_DiagSigEcuAsic</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_DiagSigEcuAsic/SwcImplementations/Impl_UEGO_DiagSigEcuAsic</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagSigEcuAsic</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_DiagSigOperPlaus</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_DiagSigOperPlaus/SwcImplementations/Impl_UEGO_DiagSigOperPlaus</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagSigOperPlaus</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_DiagSigSnsr</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_DiagSigSnsr/SwcImplementations/Impl_UEGO_DiagSigSnsr</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagSigSnsr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_DiagSigWireOl</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_DiagSigWireOl/SwcImplementations/Impl_UEGO_DiagSigWireOl</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagSigWireOl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_DiagSigWireSc</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_DiagSigWireSc/SwcImplementations/Impl_UEGO_DiagSigWireSc</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagSigWireSc</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_ICntct</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_ICntct/SwcImplementations/Impl_UEGO_ICntct</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_ICntct</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_IPmpPck</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_IPmpPck/SwcImplementations/Impl_UEGO_IPmpPck</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_IPmpPck</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_IPmpRef</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_IPmpRef/SwcImplementations/Impl_UEGO_IPmpRef</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_IPmpRef</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_IPmpSeg</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_IPmpSeg/SwcImplementations/Impl_UEGO_IPmpSeg</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_IPmpSeg</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_ISrc</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_ISrc/SwcImplementations/Impl_UEGO_ISrc</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_ISrc</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_ModCtrl</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_ModCtrl/SwcImplementations/Impl_UEGO_ModCtrl</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_ModCtrl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_O2</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_O2/SwcImplementations/Impl_UEGO_O2</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_O2</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_O2Ref</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_O2Ref/SwcImplementations/Impl_UEGO_O2Ref</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_O2Ref</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_OperRels</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_OperRels/SwcImplementations/Impl_UEGO_OperRels</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_OperRels</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_OperRelsExtInhb</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_OperRelsExtInhb/SwcImplementations/Impl_UEGO_OperRelsExtInhb</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_OperRelsExtInhb</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_RCmp</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_RCmp/SwcImplementations/Impl_UEGO_RCmp</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_RCmp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_RNernst</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_RNernst/SwcImplementations/Impl_UEGO_RNernst</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_RNernst</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_RPmp</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_RPmp/SwcImplementations/Impl_UEGO_RPmp</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_RPmp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_TCeramic</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_TCeramic/SwcImplementations/Impl_UEGO_TCeramic</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_TCeramic</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_Tstr</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_Tstr/SwcImplementations/Impl_UEGO_Tstr</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_Tstr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_UNernst</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_UNernst/SwcImplementations/Impl_UEGO_UNernst</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_UNernst</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_UEGO_UPmp</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_UEGO_UPmp/SwcImplementations/Impl_UEGO_UPmp</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_UPmp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_XcpAppl</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_XcpAppl/SwcImplementations/Impl_XcpAppl</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_XcpAppl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_dcmcore_dsldsd_appl</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_dcmcore_dsldsd_appl/SwcImplementations/Impl_dcmcore_dsldsd_appl</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_dcmcore_dsldsd_appl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_rba_EepAdaptDGS</SHORT-NAME>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_EepAdaptDGS</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_rba_MemDiag</SHORT-NAME>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_MemDiag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_rba_OsArSchedExtn</SHORT-NAME>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_OsArSchedExtn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_rba_OsArSchedExtn_OS</SHORT-NAME>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_OsArSchedExtn_OS</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_rba_OsArSchedExtn_mcop</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_rba_OsArSchedExtn_mcop/SwcImplementations/Impl_rba_OsArSchedExtn_mcop</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_OsArSchedExtn_mcop</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_rba_OsShell_Event</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_rba_OsShell_Event/SwcImplementations/Impl_rba_OsShell_Event</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_OsShell_Event</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_rba_Svbb</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_rba_Svbb/SwcImplementations/Impl_rba_Svbb</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_Svbb</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                      </SW-IMPL-MAPPINGS>
+                      <SW-MAPPINGS>
+                        <SWC-TO-ECU-MAPPING>
+                          <SHORT-NAME>SwcToEcuMapping_MSR2AR</SHORT-NAME>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ATS_Std</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_AVS_Std</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_BGTHDEV</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_CDShdG_GTMLib</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_CoEng_ObdSig</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_CoEng_StAdpr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_CoEng_StEng</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ComCo_Lyr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ComPtc</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ComScl_Appl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_DEVE</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_DSM_Conf</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_DcmDspUDS_DID</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_DcmDspUDS_SecA</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_DevLib_PwrStgState</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_Acttn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_Ctrl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_DiagPrfmnc</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_DiagWire</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_SnsrCoorn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_SnsrTMdl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EGSHeatr_TiHeatrOff</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ETC_Std</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EngDa_PwrEng</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EnvP_DD</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EnvP_VDDiag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmBCr_IntrCo</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmBCr_Pos</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_Adap</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_Diag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_Meas</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_OfsDiag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_RelsSigEvln</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_Seg</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_Spd</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCaS_SyncnPatTi</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCrS_Diag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCrS_RevCnt</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCrS_Seg</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmCrS_Spd</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmErr_Trace</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmHAgClk_Gen</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmHCaS_SigEval</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmHCrS_IntHndlr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmIf_Imprt</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmRRS_AgDetect</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmRRS_StopDetect</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmSeq_EveHndlr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmSeq_StateMn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmSrv_Lib</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmSyn_CaSPos</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmSyn_CrSPos</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_EpmTDC_Corrn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_CustAdp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_Ini</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_OpMode</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_Spd</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_SpdFeat</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Epm_SpdGrd</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_FEL_EvapSysIfAdp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_GlbDaAdapt_Adapt</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_GlbDa_ECUOnTime</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_GlbDa_VinMngt</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_HEGO_Htg</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_HEGO_OBDElec</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_HEGO_Sens</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoAdpn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoCsersPlausyDiag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoDiag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoSigAcq</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoSigEvln</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IVGdiCtl_CvoSimnErr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IgCPrimI_AcqnAdc</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IgnClPs_Dia</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IgnCoilDiagCoorn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IgnDD_Calcn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IgnDD_ModCtrlr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjDDGdi</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjDDPfi</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_AdpnCdnCvo</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_CalcCnvnFac</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_CoCvo</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_DdIf</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_InjTi</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_InjTmngAdpr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjSyG_SpCvo</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjVlvPs_ConCJ</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_InjVlvPs_Dia</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Inm_MonNode</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_IoSigSwAdpr_SwSStellantis</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_KONCW</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_KnDetControl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_KnDetLTest</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_KnDetSigEval</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MRly_Vld2Lcy</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MfDD</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MfPsDia</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MfPs_ConCY</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MoCADC_Co</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MoCMPU_Co</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MoExe_Co</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_MoXEMM_Co</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_OCWDA_Co</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_OilCmbdSen_DD</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Reset_CallBack</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_SWAdp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_SYNTIZW</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_SrvB</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_SyC_Vld2Lcy</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_T15_Vld2Lcy</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_Dac</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagRels</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagSigEcuAsic</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagSigOperPlaus</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagSigSnsr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagSigWireOl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_DiagSigWireSc</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_ICntct</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_IPmpPck</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_IPmpRef</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_IPmpSeg</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_ISrc</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_ModCtrl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_O2</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_O2Ref</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_OperRels</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_OperRelsExtInhb</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_RCmp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_RNernst</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_RPmp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_TCeramic</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_Tstr</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_UNernst</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_UEGO_UPmp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_XcpAppl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_dcmcore_dsldsd_appl</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_EepAdaptDGS</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_MemDiag</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_OsArSchedExtn</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_OsArSchedExtn_mcop</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_OsShell_Event</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_Svbb</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                          <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/RB/PT/PCFG_SYS/EcuInstances/MDG1</ECU-INSTANCE-REF>
+                        </SWC-TO-ECU-MAPPING>
+                      </SW-MAPPINGS>
+                    </SYSTEM-MAPPING>
+                  </MAPPINGS>
+                </SYSTEM>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

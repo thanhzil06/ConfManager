@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>UBK</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>Project</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>EcucModuleConfigurationValuess</SHORT-NAME>
+                  <ELEMENTS>
+                    <ECUC-VALUE-COLLECTION>
+                      <SHORT-NAME>RteEcucValueCollections</SHORT-NAME>
+                      <ECU-EXTRACT-REF DEST="SYSTEM">/RB/PT/PCFG_ECU/MDG1_EXTR</ECU-EXTRACT-REF>
+                      <ECUC-VALUES>
+                        <ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                          <ECUC-MODULE-CONFIGURATION-VALUES-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/RB/UBK/Project/EcucModuleConfigurationValuess/Os</ECUC-MODULE-CONFIGURATION-VALUES-REF>
+                        </ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                        <ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                          <ECUC-MODULE-CONFIGURATION-VALUES-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/RB/UBK/Project/EcucModuleConfigurationValuess/Rte</ECUC-MODULE-CONFIGURATION-VALUES-REF>
+                        </ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                        <ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                          <ECUC-MODULE-CONFIGURATION-VALUES-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/RB/UBK/Project/EcucModuleConfigurationValuess/EcuC</ECUC-MODULE-CONFIGURATION-VALUES-REF>
+                        </ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                        <ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                          <ECUC-MODULE-CONFIGURATION-VALUES-REF DEST="ECUC-MODULE-CONFIGURATION-VALUES">/RB/UBK/Project/EcucModuleConfigurationValuess/Com</ECUC-MODULE-CONFIGURATION-VALUES-REF>
+                        </ECUC-MODULE-CONFIGURATION-VALUES-REF-CONDITIONAL>
+                      </ECUC-VALUES>
+                    </ECUC-VALUE-COLLECTION>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

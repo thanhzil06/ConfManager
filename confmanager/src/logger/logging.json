@@ -1,0 +1,62 @@
+{
+  "disable_existing_loggers": true,
+  "formatters": {
+    "csv": {
+      "format": "%(created)s,%(name)s,\"%(asctime)s\",%(levelname)s,\"%(message)s\""
+    },
+    "simple": {
+      "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "formatter": "simple",
+      "level": "DEBUG",
+      "stream": "ext://sys.stdout"
+    },
+    "error_file_handler": {
+      "class": "logging.FileHandler",
+      "encoding": "utf8",
+      "filename": "errors.log",
+      "formatter": "csv",
+      "level": "ERROR"
+    },
+    "warning": {
+      "backupCount": 20,
+      "class": "logging.handlers.RotatingFileHandler",
+      "encoding": "utf8",
+      "filename": "warnings.log",
+      "formatter": "csv",
+      "level": "WARNING",
+      "maxBytes": 10485760
+    }
+  },
+  "loggers": {
+    "OdxParser": {
+      "handlers": [
+        "error_file_handler",
+        "warning"
+      ],
+      "level": "ERROR",
+      "propagate": false
+    },
+    "dev": {
+      "handlers": [
+        "console",
+        "error_file_handler",
+        "warning"
+      ],
+      "level": "INFO",
+      "propagate": false
+    }
+  },
+  "root": {
+    "handlers": [
+      "error_file_handler"
+    ],
+    "level": "INFO",
+    "propagate": false
+  },
+  "version": 1
+}
