@@ -6,6 +6,7 @@ from utils.timer import Timer
 from confmanager_modes.confmanager_merger import MergerMode
 from confmanager_modes.confmanager_updater import UpdaterMode
 from confmanager_modes.confmanager_modes_common import CommonModeUtils
+from ecuc_partition_handling.ecuc_partition_parser import EcucPartitionUpdater
 import sys
 import constants as csts
 
@@ -34,6 +35,8 @@ def main():
                                  configuration_data,
                                  args.tool_mode,
                                  logger)
+                    # Update ECUCPartition values
+                    ecuc_partition_handle(output_path=args.output_path, cust_ws=args.cust_ws)
 
             else:
                 raise Exception
@@ -134,6 +137,22 @@ def mode_updater(pver_root, output_path, cust_ws, configuration_data, tool_mode,
         # Update merged file by removing content_to_ignore
         tool_mode_obj.update_files(target_file, merged_root, merged_file_dict, content_to_remove)
 
+def ecuc_partition_handle(output_path, cust_ws):
+    # Locate input files for update of ECUC_Partition
+    merged_file = os.path.join(output_path, 'conf_ecucpartition_ecucvalues_merged.arxml')
+    merged_delta_file = os.path.join(cust_ws, 'RB_RteArch/EcuPartition/conf_ecucpartition_ecucvalues_merged.arxml')
+    output_with_delta = os.path.join(output_path, 'conf_ecucpartition_ecucvalues_update.arxml')
+
+    merged_obj = EcucPartitionUpdater(merged_file )
+    merged_delta_obj = EcucPartitionUpdater(merged_delta_file)
+    
+    # Implementation to get the delta changes
+    ecuc_id = merged_delta_obj.map_ecuc_ref()
+    merged_obj.update_ecuc_iref(ecuc_id)
+    merged_obj.check_duplicate_iref()
+    
+    # Add the delta changes to build the output which is based on Pver file - conf_ecucpartition_ecucvalues.arxml
+    merged_obj.update_new_arxml(output_with_delta)
 
 if __name__ == "__main__":
     main_parser = argparse.ArgumentParser(
