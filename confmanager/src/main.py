@@ -159,7 +159,7 @@ def mode_updater(pver_root, output_path, cust_ws, configuration_data, tool_mode,
             merged_obj.update_ecuc_iref(ecuc_id)
             merged_obj.check_duplicate_iref()            
             # Add the delta changes to build the output which is based on Pver file - conf_ecucpartition_ecucvalues.arxml
-            merged_obj.update_new_ecucpartition_arxml(base_file)  
+            merged_obj.update_ecucpartition_file(updated_output_file=base_file)                                                
         
         else:
             # Update merged file by removing content_to_ignore
