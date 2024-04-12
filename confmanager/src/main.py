@@ -9,6 +9,7 @@ from confmanager_modes.confmanager_modes_common import CommonModeUtils
 from ecuc_partition_handling.ecuc_partition_parser import EcucPartitionUpdater
 import sys
 import constants as csts
+import glob
 
 
 @Timer
@@ -151,7 +152,8 @@ def mode_updater(pver_root, output_path, cust_ws, configuration_data, tool_mode,
             merged_obj = EcucPartitionUpdater(base_file)
 
             # Hard-code is fine as OEM provides back with specific folder structure
-            file_with_delta = os.path.join(cust_ws, 'RB_RteArch/EcuPartition/conf_ecucpartition_ecucvalues_merged.arxml')
+            file_with_delta = glob.glob(os.path.join(cust_ws,'RB_RteArch', 'EcuPartition', 
+                                                     '**/conf_ecucpartition_ecucvalues*.arxml'), recursive=True)                
             delta_obj = EcucPartitionUpdater(file_with_delta)
             
             # Implementation to get the delta changes

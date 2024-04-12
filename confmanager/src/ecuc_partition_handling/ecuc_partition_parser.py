@@ -9,7 +9,7 @@ class EcucPartitionUpdater:
 
     def __init__(self, arxml_file) -> None:
         self.arxml_file = arxml_file
-        self.tree = autosarlib.parse(self.arxml_file)
+        self.tree = etree.parse(self.arxml_file)
         self.sub_containers = self.tree.find('.//ns:SUB-CONTAINERS', namespaces=namespace)
         self.ecuc_containers = self.get_ecuc_container(sub_container=self.sub_containers)
         self.container_ref_id = {}
