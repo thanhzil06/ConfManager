@@ -9,7 +9,6 @@ from confmanager_modes.confmanager_modes_common import CommonModeUtils
 from ecuc_partition_handling.ecuc_partition_updater import EcucPartitionUpdater
 import sys
 import constants as csts
-import glob
 
 
 @Timer
@@ -35,7 +34,7 @@ def main():
                             ecuc_partiton_updater(pver=args.pver_root, 
                                                   cust_ws=args.cust_ws, 
                                                   output=args.output_path,
-                                                  main_logger=logger)                            
+                                                  main_logger=logger)         
                         else: # Other use cases
                             mode_updater(args.pver_root,
                                         args.output_path,

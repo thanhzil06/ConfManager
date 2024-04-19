@@ -1,7 +1,4 @@
 from lxml import etree
-import boschlibparserarxmlutils.autosar_lib_4_3_0 as autosarlib 
-import constants as csts
-import re
 namespace = {'ns' : 'http://autosar.org/schema/r4.0'}
 
 class EcucPartitionParser:    
@@ -13,6 +10,8 @@ class EcucPartitionParser:
         self.sub_containers = self.tree.find('.//ns:SUB-CONTAINERS', namespaces=namespace)
         self.ecuc_containers = self.get_ecuc_container(sub_container=self.sub_containers)
         self.container_ref_id = {}
+        self.container_content_id = {}
+        self.container_param_id = {}
     
     @staticmethod
     def get_ecuc_container(sub_container):
@@ -36,10 +35,16 @@ class EcucPartitionParser:
         return name
     
     @staticmethod
+    def get_parameter(ecuc_container):
+        # Get REFERENCE element of the container
+        param_values = ecuc_container.find('.//ns:PARAMETER-VALUES', namespaces=namespace)
+        return param_values     
+        
+    @staticmethod
     def get_reference(ecuc_container):
         # Get REFERENCE element of the container
         ref_values = ecuc_container.find('.//ns:REFERENCE-VALUES', namespaces=namespace)
-        return ref_values
+        return ref_values     
         
     @staticmethod
     def get_iref(ref_values):
@@ -54,7 +59,16 @@ class EcucPartitionParser:
         target_name = target_ref.text.split('/')[-1]
         return target_name                 
 
+    def map_container_content(self):
+    # Create a hashmap with {key-value} pair within an ECUC-CONTAINER is {SHORT_NAME - ITS_CONTENT} 
+        for ecuc_container in self.ecuc_containers:            
+            if self.check_condition(ecuc_container):       
+                short_name = self.get_short_name(ecuc_container=ecuc_container)
+                key = short_name.text            
 
+                self.container_content_id[key] = ecuc_container
+        return self.container_content_id
+    
     def map_container_reference(self):
     # Create a hashmap with {key-value} pair is {SHORT_NAME - REFERENCE_VALUES} within an ECUC-CONTAINER
         for ecuc_container in self.ecuc_containers:            
@@ -67,7 +81,29 @@ class EcucPartitionParser:
                     self.container_ref_id[key] = None       
                 else:        
                     self.container_ref_id[key] = ref_values                 
-        return self.container_ref_id 
+        return self.container_ref_id     
+
+    def map_container_parameter(self):
+    # Create a hashmap with {key-value} pair within an ECUC-CONTAINER is {SHORT_NAME - PARAMETER-VALUES} 
+        for ecuc_container in self.ecuc_containers:            
+            if self.check_condition(ecuc_container):       
+                short_name = self.get_short_name(ecuc_container=ecuc_container)
+                key = short_name.text            
+                param_values = self.get_parameter(ecuc_container=ecuc_container)
+
+                self.container_param_id[key] = param_values
+        return self.container_param_id   
+
+    def check_base_param(self, param_id):
+    # If the customer changes parameter element in the base (which they should not to), replace with the original element
+        for ecuc_container in self.ecuc_containers:
+            if self.check_condition(ecuc_container):
+                short_name = self.get_short_name(ecuc_container=ecuc_container)
+                pointer = short_name.text
+                param = self.get_parameter(ecuc_container=ecuc_container)  
+
+                if (param is not None):
+                    ecuc_container.replace(param, param_id[pointer])     
     
     def check_duplicate_iref(self):
         # In each ECUC-CONTAINER-VALUE tag, check whether ECUC-INSTANCE-REFERENCE is duplicated.
@@ -75,17 +111,16 @@ class EcucPartitionParser:
             if not self.check_condition(ecuc_container):
                 continue
             ref_values = self.get_reference(ecuc_container=ecuc_container)
-
             if ref_values is not None:
                 iref_name = []
                 double_iref = []         
 
                 # If yes, remove them.   
-                self.remove_duplicate(reference=ref_values,
+                self.remove_duplicate_iref(reference=ref_values,
                                     single=iref_name,
-                                    duplicate=double_iref)
+                                    duplicate=double_iref)                            
 
-    def remove_duplicate(self, reference, single, duplicate):
+    def remove_duplicate_iref(self, reference, single, duplicate):
         # Look for duplicated ECUC-INSTANCE-REFERENCE based on their TARGET-REF
         for iref in reference:
             target_name = self.get_target_name(instance_ref=iref)                                                          
@@ -99,8 +134,26 @@ class EcucPartitionParser:
             target_name = self.get_target_name(instance_ref=iref)
             if target_name in duplicate:
                 reference.remove(iref) 
+
+    def check_empty_element(self):
+        # If a container has empty REFERNECE-VALUES, remove it
+        ecuc_containers = self.get_ecuc_container(sub_container=self.sub_containers)
+        for ecuc_container in ecuc_containers:
+            if not self.check_condition(ecuc_container):
+                continue
+
+            ref_values = self.get_reference(ecuc_container=ecuc_container)
+            param_values = self.get_parameter(ecuc_container=ecuc_container)
+
+            if (ref_values is None) and (param_values is None):
+                self.sub_containers.remove(ecuc_container)
+
+            if ref_values is not None:
+                iref = self.get_iref(ref_values=ref_values)
+                if (iref == []):
+                    self.sub_containers.remove(ecuc_container)  
                 
-    def update_ecuc_iref(self, container_ref_id):        
+    def update_ecuc_iref(self, container_ref_id, container_content_id):        
     # Update delta changes from OEM to base file: Add the new INSTANCE-REFERENCE values into each ECUC-CONTAINER        
         for ecuc_container in self.ecuc_containers:
             if not self.check_condition(ecuc_container):    
@@ -110,18 +163,27 @@ class EcucPartitionParser:
             pointer = short_name.text                   
             ref_values = self.get_reference(ecuc_container=ecuc_container)                
             
-            # If ecuc-container of the base has no reference values            
-            if container_ref_id[pointer] is None:
-                continue
-            else:
-                if ref_values is None: 
-                    ecuc_container.append(container_ref_id[pointer])            
-                else:                                           
-                    self.get_delta(ecuc_container=ecuc_container,
-                                    ref_id= container_ref_id,
-                                    pointer=pointer,
-                                    ref=ref_values)                                   
-        self.sort_ecuc_container(ecuc_containers = self.ecuc_containers, sub_containers = self.sub_containers)
+            # Complex case: If Ecuc-containers in the generated file do not appear in the base, add them   
+            if pointer not in container_ref_id.keys():
+                for key in container_ref_id.keys():
+                    container = container_content_id[key]
+                    self.sub_containers.append(container)
+            else:    
+                if container_ref_id[pointer] is None:
+                    continue
+                else:
+                    # If ecuc-container of the base has no reference values, add them
+                    if ref_values is None: 
+                        ecuc_container.append(container_ref_id[pointer])            
+                    else:                                           
+                        self.get_delta(ecuc_container=ecuc_container,
+                                        ref_id=container_ref_id,
+                                        pointer=pointer,
+                                        ref=ref_values) 
+                        
+        # Sort all Ecuc_containers after updating delta changes               
+        new_ecuc_containers = self.get_ecuc_container(sub_container=self.sub_containers)                                 
+        self.sort_ecuc_container(ecuc_containers = new_ecuc_containers, sub_containers = self.sub_containers)
 
     def get_delta(self, ecuc_container, ref_id, pointer, ref):
         # Within an ECUC-CONTAINER, remove reference values of the base
