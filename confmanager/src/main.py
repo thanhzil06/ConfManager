@@ -6,6 +6,7 @@ from utils.timer import Timer
 from confmanager_modes.confmanager_merger import MergerMode
 from confmanager_modes.confmanager_updater import UpdaterMode
 from confmanager_modes.confmanager_modes_common import CommonModeUtils
+from ecuc_partition_handling.ecuc_partition_updater import EcucPartitionUpdater
 import sys
 import constants as csts
 
@@ -27,14 +28,21 @@ def main():
                                 args.tool_mode,
                                 logger)
 
-                else:  # Mode Updater
-                    mode_updater(args.pver_root,
-                                 args.output_path,
-                                 args.cust_ws,
-                                 configuration_data,
-                                 args.tool_mode,
-                                 logger)
-
+                else:  # Mode Updater'
+                    for topic in configuration_data.keys():
+                        if topic == 'EcuPartition':                              
+                            ecuc_partiton_updater(pver=args.pver_root, 
+                                                  cust_ws=args.cust_ws, 
+                                                  output=args.output_path,
+                                                  main_logger=logger)         
+                        else: # Other use cases
+                            mode_updater(args.pver_root,
+                                        args.output_path,
+                                        args.cust_ws,
+                                        configuration_data,
+                                        args.tool_mode,
+                                        logger)
+                                
             else:
                 raise Exception
         except Exception as error:
@@ -44,6 +52,12 @@ def main():
     except Exception as e:
         logger.error('Unexpected error occurred : ' + str(e), exc_info=True)
 
+def ecuc_partiton_updater(pver, cust_ws, output, main_logger):
+    ecuc_partition_obj = EcucPartitionUpdater(pver_path=pver, 
+                                              cust_path=cust_ws, 
+                                              output_path= output, 
+                                              logger=main_logger)
+    ecuc_partition_obj.port_delta()
 
 def mode_merger(pver_root, output_path, configuration_data, tool_mode, main_logger):
     """
@@ -107,33 +121,33 @@ def mode_updater(pver_root, output_path, cust_ws, configuration_data, tool_mode,
                                  main_logger)
 
     for topic in configuration_data.keys():
-        (target_file,
-         files_to_merge_path_list,
-         content_to_remove) = modes_common_obj.prepare_mode_inputs(mode,
-                                                                   topic,
-                                                                   configuration_data,
-                                                                   root_paths)
+        if topic != 'EcuPartition': 
+            (target_file,
+            files_to_merge_path_list,
+            content_to_remove) = modes_common_obj.prepare_mode_inputs(mode,
+                                                                    topic,
+                                                                    configuration_data,
+                                                                    root_paths)
 
-        if modes_common_obj.check_if_enough_files_for_merge(files_to_merge_path_list):
-            # Merge here
-            # target_file must finish with "_merged"
-            target_file_merge = target_file.replace(".arxml", "_merged.arxml")
-            (merged_root,
-             merged_file_dict) = tool_merger_obj.merge_files(target_file_merge,
-                                                             files_to_merge_path_list)
-        else:
-            # Read the file in files_to_merge_path_list and get the dict
-            if not files_to_merge_path_list:
-                main_logger.error("Paths for files listed in \"inputs\" are not found in input folders: please check "
-                                  "your configuration file and your input folders")
-                return
-            else:
+            if modes_common_obj.check_if_enough_files_for_merge(files_to_merge_path_list):
+                # Merge here
+                # target_file must finish with "_merged"
+                target_file_merge = target_file.replace(".arxml", "_merged.arxml")
                 (merged_root,
-                 merged_file_dict[csts.root_main_tag]) = tool_merger_obj.parse_and_get_dico(files_to_merge_path_list[0])
-
-        # Update merged file by removing content_to_ignore
-        tool_mode_obj.update_files(target_file, merged_root, merged_file_dict, content_to_remove)
-
+                merged_file_dict) = tool_merger_obj.merge_files(target_file_merge,
+                                                                files_to_merge_path_list)
+                
+            else:
+                # Read the file in files_to_merge_path_list and get the dict
+                if not files_to_merge_path_list:
+                    main_logger.error("Paths for files listed in \"inputs\" are not found in input folders: please check "
+                                    "your configuration file and your input folders")
+                    return
+                else:
+                    (merged_root,
+                    merged_file_dict[csts.root_main_tag]) = tool_merger_obj.parse_and_get_dico(files_to_merge_path_list[0])
+            tool_mode_obj.update_files(target_file, merged_root, merged_file_dict, content_to_remove)
+  
 
 if __name__ == "__main__":
     main_parser = argparse.ArgumentParser(

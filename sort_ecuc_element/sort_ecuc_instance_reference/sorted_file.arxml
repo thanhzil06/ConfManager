@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<REFERENCE-VALUES>
+	<ECUC-INSTANCE-REFERENCE-VALUE>
+		<DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
+		<VALUE-IREF>
+			<TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ComScl_NetMtrx0_Scl</TARGET-REF>
+		</VALUE-IREF>
+	</ECUC-INSTANCE-REFERENCE-VALUE>
+<ECUC-INSTANCE-REFERENCE-VALUE>
+        <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
+        <VALUE-IREF>
+			<TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ComScl_NetMtrx3_Scl</TARGET-REF>
+        </VALUE-IREF>
+    </ECUC-INSTANCE-REFERENCE-VALUE>
+	<ECUC-INSTANCE-REFERENCE-VALUE>
+        <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
+        <VALUE-IREF>
+			<TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_SWC_VcodProxi</TARGET-REF>
+        </VALUE-IREF>
+    </ECUC-INSTANCE-REFERENCE-VALUE>
+	</REFERENCE-VALUES>
