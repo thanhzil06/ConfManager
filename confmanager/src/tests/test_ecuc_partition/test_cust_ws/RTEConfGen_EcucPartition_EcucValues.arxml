@@ -88,9 +88,15 @@
                                 <ECUC-INSTANCE-REFERENCE-VALUE>
                                   <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
                                   <VALUE-IREF>
-                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_D3</TARGET-REF>
+                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_D1</TARGET-REF>
                                   </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>							  
+                                </ECUC-INSTANCE-REFERENCE-VALUE>
+                                <ECUC-INSTANCE-REFERENCE-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
+                                  <VALUE-IREF>
+                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_D2</TARGET-REF>
+                                  </VALUE-IREF>
+                                </ECUC-INSTANCE-REFERENCE-VALUE>								
 							  </REFERENCE-VALUES>
                             </ECUC-CONTAINER-VALUE>
                           </SUB-CONTAINERS>

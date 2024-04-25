@@ -124,10 +124,6 @@
                               </REFERENCE-VALUES>
                             </ECUC-CONTAINER-VALUE>
                             <ECUC-CONTAINER-VALUE>
-                              <SHORT-NAME>EcucPartition_OsApp_D</SHORT-NAME>
-                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition</DEFINITION-REF>
-                            </ECUC-CONTAINER-VALUE>
-                            <ECUC-CONTAINER-VALUE>
                               <SHORT-NAME>EcucPartition_OsApp_C</SHORT-NAME>
                               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition</DEFINITION-REF>
                               <PARAMETER-VALUES>

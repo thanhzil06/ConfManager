@@ -41,8 +41,8 @@
                                     <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
                                     <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_A1</TARGET-REF>
                                   </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>
-                                <ECUC-INSTANCE-REFERENCE-VALUE>
+                                </ECUC-INSTANCE-REFERENCE-VALUE>	                                
+                              <ECUC-INSTANCE-REFERENCE-VALUE>
                                   <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
                                   <VALUE-IREF>
                                     <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
@@ -56,27 +56,7 @@
                                     <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_A3</TARGET-REF>
                                   </VALUE-IREF>
                                 </ECUC-INSTANCE-REFERENCE-VALUE>
-                                <ECUC-INSTANCE-REFERENCE-VALUE>
-                                  <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
-                                  <VALUE-IREF>
-                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
-                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_A6</TARGET-REF>
-                                  </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>
-                                <ECUC-INSTANCE-REFERENCE-VALUE>
-                                  <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
-                                  <VALUE-IREF>
-                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
-                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_A7</TARGET-REF>
-                                  </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>								
-                              <ECUC-INSTANCE-REFERENCE-VALUE>
-                                  <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
-                                  <VALUE-IREF>
-                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_A8</TARGET-REF>
-                                  </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>								
-                              </REFERENCE-VALUES>
+                                </REFERENCE-VALUES>
                             </ECUC-CONTAINER-VALUE>
                             <ECUC-CONTAINER-VALUE>
                               <SHORT-NAME>EcucPartition_OsApp_B</SHORT-NAME>
@@ -105,35 +85,15 @@
                                     <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
                                     <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_B2</TARGET-REF>
                                   </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>
-                                <ECUC-INSTANCE-REFERENCE-VALUE>
+                                </ECUC-INSTANCE-REFERENCE-VALUE>	                                
+                              <ECUC-INSTANCE-REFERENCE-VALUE>
                                   <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
                                   <VALUE-IREF>
                                     <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
                                     <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_B3</TARGET-REF>
                                   </VALUE-IREF>
                                 </ECUC-INSTANCE-REFERENCE-VALUE>
-                                <ECUC-INSTANCE-REFERENCE-VALUE>
-                                  <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
-                                  <VALUE-IREF>
-                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_B5</TARGET-REF>
-                                  </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>								
-                              <ECUC-INSTANCE-REFERENCE-VALUE>
-                                  <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
-                                  <VALUE-IREF>
-                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
-                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_B6</TARGET-REF>
-                                  </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>
-                                <ECUC-INSTANCE-REFERENCE-VALUE>
-                                  <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
-                                  <VALUE-IREF>
-                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
-                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_B7</TARGET-REF>
-                                  </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>								
-                              </REFERENCE-VALUES>
+                                </REFERENCE-VALUES>
                             </ECUC-CONTAINER-VALUE>
                             <ECUC-CONTAINER-VALUE>
                               <SHORT-NAME>EcucPartition_OsApp_C</SHORT-NAME>
@@ -156,34 +116,9 @@
                                     <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_C1</TARGET-REF>
                                   </VALUE-IREF>
                                 </ECUC-INSTANCE-REFERENCE-VALUE>								
-                              <ECUC-INSTANCE-REFERENCE-VALUE>
-                                  <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
-                                  <VALUE-IREF>
-                                    <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
-                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_C2</TARGET-REF>
-                                  </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>								
-                              <ECUC-INSTANCE-REFERENCE-VALUE>
-                                  <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
-                                  <VALUE-IREF>
-                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_C4</TARGET-REF>
-                                  </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>								
-                              </REFERENCE-VALUES>
+                              </REFERENCE-VALUES>							  
                             </ECUC-CONTAINER-VALUE>
-						  <ECUC-CONTAINER-VALUE>
-                              <SHORT-NAME>EcucPartition_OsApp_D</SHORT-NAME>
-                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition</DEFINITION-REF>							  
-                            <REFERENCE-VALUES>
-                                <ECUC-INSTANCE-REFERENCE-VALUE>
-                                  <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
-                                  <VALUE-IREF>
-                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_D2</TARGET-REF>
-                                  </VALUE-IREF>
-                                </ECUC-INSTANCE-REFERENCE-VALUE>							  
-							  </REFERENCE-VALUES>
-                            </ECUC-CONTAINER-VALUE>
-                            </SUB-CONTAINERS>
+						  </SUB-CONTAINERS>
 						</ECUC-CONTAINER-VALUE>
                       </CONTAINERS>
                     </ECUC-MODULE-CONFIGURATION-VALUES>

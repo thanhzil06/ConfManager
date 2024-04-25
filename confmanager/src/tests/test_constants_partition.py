@@ -3,6 +3,7 @@ root_path = os.path.normpath(os.path.join(os.path.dirname(__file__), "test_ecuc_
 
 BASE_FILE = 'conf_ecucpartition_ecucvalues.arxml'
 GENERATED_FILE = 'RTEConfGen_EcucPartition_EcucValues.arxml'
+OUTPUT_FILE = 'output.arxml'
 
 # Constants for the test of porting delta changes 
 pver_root = os.path.join(root_path, "test_pver")
@@ -25,10 +26,22 @@ output_file = os.path.join(output_path, f"{BASE_FILE}")
 # Constants for the test of sorting elements 
 sort_root = os.path.join(root_path, "test_sort")
 expect_sort = os.path.join(sort_root, "expected_sort.arxml")
-output_sort = os.path.join(sort_root, "output_sort.arxml")
+output_sort = os.path.join(sort_root, f"{OUTPUT_FILE}")
 
 # Constants for the test of removing duplicate elements 
 dup_root = os.path.join(root_path, "test_duplicate")
 duplicate_file = os.path.join(dup_root, "duplicate.arxml")
-output_duplicate = os.path.join(dup_root, "output.arxml")
+output_duplicate = os.path.join(dup_root, f"{OUTPUT_FILE}")
 expect_dup_remove = os.path.join(dup_root, "expected_dup_remove.arxml")
+
+# Constants for the test of removing empty container
+empty_root = os.path.join(root_path, "test_empty")
+empty_file = os.path.join(empty_root, "empty.arxml")
+output_empty = os.path.join(empty_root, f"{OUTPUT_FILE}")
+expect_empty_remove = os.path.join(empty_root, "expected_empty_remove.arxml")
+
+# Constants for the test of getting base parameter of CI PVER
+changed_base_root = os.path.join(root_path, "test_change_param")
+base_param_file = os.path.join(changed_base_root, "base_file.arxml")
+changed_param_file = os.path.join(changed_base_root, "changed_base.arxml")
+output_param = os.path.join(changed_base_root, f"{OUTPUT_FILE}")

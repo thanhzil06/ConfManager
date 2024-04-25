@@ -66,7 +66,15 @@
                             <ECUC-CONTAINER-VALUE>
                               <SHORT-NAME>EcucPartition_OsApp_D</SHORT-NAME>
                               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition</DEFINITION-REF>
-                            </ECUC-CONTAINER-VALUE>
+							  <REFERENCE-VALUES>
+                                <ECUC-INSTANCE-REFERENCE-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-INSTANCE-REFERENCE-DEF">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef</DEFINITION-REF>
+                                  <VALUE-IREF>
+                                    <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_D1</TARGET-REF>
+                                  </VALUE-IREF>
+                                </ECUC-INSTANCE-REFERENCE-VALUE>								
+							  </REFERENCE-VALUES>	
+							</ECUC-CONTAINER-VALUE>
                           </SUB-CONTAINERS>
                         </ECUC-CONTAINER-VALUE>
                       </CONTAINERS>

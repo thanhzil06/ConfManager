@@ -154,7 +154,7 @@ class EcucPartitionParser:
                     self.sub_containers.remove(ecuc_container)  
                 
     def update_ecuc_iref(self, container_ref_id, container_content_id):        
-    # Update delta changes from OEM to base file: Add the new INSTANCE-REFERENCE values into each ECUC-CONTAINER        
+    # Update delta changes from OEM to base file: Add the new INSTANCE-REFERENCE values into each ECUC-CONTAINER 
         for ecuc_container in self.ecuc_containers:
             if not self.check_condition(ecuc_container):    
                 continue
@@ -164,14 +164,11 @@ class EcucPartitionParser:
             ref_values = self.get_reference(ecuc_container=ecuc_container)                
             
             # Complex case: If Ecuc-containers in the generated file do not appear in the base, add them   
-            if pointer not in container_ref_id.keys():
-                for key in container_ref_id.keys():
+            for key in container_ref_id.keys():
+                if key != pointer:
                     container = container_content_id[key]
-                    self.sub_containers.append(container)
-            else:    
-                if container_ref_id[pointer] is None:
-                    continue
-                else:
+                    self.sub_containers.append(container)   
+                elif container_ref_id[pointer] is not None:
                     # If ecuc-container of the base has no reference values, add them
                     if ref_values is None: 
                         ecuc_container.append(container_ref_id[pointer])            
@@ -179,7 +176,7 @@ class EcucPartitionParser:
                         self.get_delta(ecuc_container=ecuc_container,
                                         ref_id=container_ref_id,
                                         pointer=pointer,
-                                        ref=ref_values) 
+                                        ref=ref_values)                
                         
         # Sort all Ecuc_containers after updating delta changes               
         new_ecuc_containers = self.get_ecuc_container(sub_container=self.sub_containers)                                 

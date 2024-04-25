@@ -4,7 +4,7 @@ from xmldiff import main, formatting
 from ecuc_partition_handling.ecuc_partition_updater import EcucPartitionUpdater
 import tests.test_constants_partition as test_const
 
-class TestEcucPartitionParser(unittest.TestCase):
+class TestEcucPartitionUpdater(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.pver_path = test_const.pver_root    
