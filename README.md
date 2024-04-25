@@ -117,3 +117,30 @@ the content of element <SHORT-NAME> as unique identifier for the EcuCPartition.
 										-> <REFERENCE-VALUES> -> <ECUC-INSTANCE-REFERENCE-VALUE> -> <VALUE-IREF> -> <TARGET-REF>	: STLA
 	==> File ARXML của cả Bosch và STLA đều có <ECUC-CONTAINER-VALUE>. Tuy nhiên, nội dung trong đó sẽ khác nhau.	
 
+
+-----------------------ECPT 12401-----------------------
+
+Based on the most recent update from our team accountable for customer requirements, a new scenario has emerged in the ECUC Partition use case. 
+
+Instead of receiving a single file with the concept _merged from customer, RB will now receive multiple files. Here is a brief summary:
+
+1) From PVER CI
+        - file A: RTEConfGen_EcucPartition.arxml
+   
+   	- file B: conf_ecucpartition_values.arxml
+
+3) Pre RTE received from STLA:
+   
+   	- file A+: RTEConfGen_EcucPartition.arxml
+   
+   	- file B+: conf_ecucpartition_values.arxml
+   
+	- file D: another new file.arxml
+   
+	delta = delta + additional info from new file.	
+								
+5) Final goal of Conf updater v_1.2.0
+   
+- Identify the delta between (File A & File A+) + (File B & File B+)
+  
+- port delta changes into file B   --> update the File B as B1 with the delta.
