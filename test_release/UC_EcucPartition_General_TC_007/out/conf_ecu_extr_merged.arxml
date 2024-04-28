@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PCFG_ECU</SHORT-NAME>
+              <ELEMENTS>
+                <SYSTEM>
+                  <SHORT-NAME>MDG1_EXTR</SHORT-NAME>
+                  <CATEGORY>ECU_EXTRACT</CATEGORY>
+                  <ECU-EXTRACT-VERSION>1.0.0</ECU-EXTRACT-VERSION>
+                  <FIBEX-ELEMENTS>
+                    <FIBEX-ELEMENT-REF-CONDITIONAL>
+                      <FIBEX-ELEMENT-REF DEST="ECU-INSTANCE">/RB/PT/PCFG_SYS/EcuInstances/MDG1</FIBEX-ELEMENT-REF>
+                    </FIBEX-ELEMENT-REF-CONDITIONAL>
+                  </FIBEX-ELEMENTS>
+                  <MAPPINGS>
+                    <SYSTEM-MAPPING>
+                      <SHORT-NAME>SYSMPG_MDG1</SHORT-NAME>
+                      <DATA-MAPPINGS>
+                        <SENDER-RECEIVER-TO-SIGNAL-GROUP-MAPPING>
+                          <DATA-ELEMENT-IREF>
+                            <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                            <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/PP_COM_Tx_ENGINE_FD_DIESEL</CONTEXT-PORT-REF>
+                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RB/PT/ComVeh/ComScl_NetMtrx/PortInterfaces/IF_COM_Tx_ENGINE_FD_DIESEL/VD_COM_Tx_ENGINE_FD_DIESEL</TARGET-DATA-PROTOTYPE-REF>
+                          </DATA-ELEMENT-IREF>
+                          <SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/RB/PT/PCFG_SYS/ComVeh/SystemSignalGroups/SystemSignalGroup_COM_Tx_ENGINE_FD_DIESEL</SIGNAL-GROUP-REF>
+                          <TYPE-MAPPING>
+                            <SENDER-REC-RECORD-TYPE-MAPPING>
+                              <RECORD-ELEMENT-MAPPINGS>
+                                <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                                  <APPLICATION-RECORD-ELEMENT-REF DEST="APPLICATION-RECORD-ELEMENT">/RB/PT/ComVeh/ComScl_NetMtrx/ApplicationDataTypes/ARDT_COM_Tx_ENGINE_FD_DIESEL/AdblueRemainDist</APPLICATION-RECORD-ELEMENT-REF>
+                                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/RB/PT/PCFG_SYS/ComVeh/SystemSignals/SystemSignal_COM_Tx_AdblueRemainDist</SYSTEM-SIGNAL-REF>
+                                </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                                <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                                  <APPLICATION-RECORD-ELEMENT-REF DEST="APPLICATION-RECORD-ELEMENT">/RB/PT/ComVeh/ComScl_NetMtrx/ApplicationDataTypes/ARDT_COM_Tx_ENGINE_FD_DIESEL/Adblue_FL_LVL</APPLICATION-RECORD-ELEMENT-REF>
+                                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/RB/PT/PCFG_SYS/ComVeh/SystemSignals/SystemSignal_COM_Tx_Adblue_FL_LVL</SYSTEM-SIGNAL-REF>
+                                </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                              </RECORD-ELEMENT-MAPPINGS>
+                            </SENDER-REC-RECORD-TYPE-MAPPING>
+                          </TYPE-MAPPING>
+                        </SENDER-RECEIVER-TO-SIGNAL-GROUP-MAPPING>
+                        <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                          <DATA-ELEMENT-IREF>
+                            <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/RP_COM_Rx_AGS2_ECM_STATUS</CONTEXT-PORT-REF>
+                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RB/PT/ComVeh/ComScl_EngLin/PortInterfaces/IF_COM_Rx_AGS2_ECM_STATUS/VD_COM_Rx_AGS2_BoostStat</TARGET-DATA-PROTOTYPE-REF>
+                          </DATA-ELEMENT-IREF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/RB/PT/PCFG_SYS/ComVeh/SystemSignals/SystemSignal_COM_Rx_AGS2_BoostStat</SYSTEM-SIGNAL-REF>
+                        </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                        <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                          <DATA-ELEMENT-IREF>
+                            <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                            <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/PP_COM_Tx_ENGINE_HYBD_FD_3</CONTEXT-PORT-REF>
+                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RB/PT/ComVeh/ComScl_NetMtrx/PortInterfaces/IF_COM_Tx_ENGINE_HYBD_FD_3/VD_COM_Tx_AGSposn</TARGET-DATA-PROTOTYPE-REF>
+                          </DATA-ELEMENT-IREF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/RB/PT/PCFG_SYS/ComVeh/SystemSignals/SystemSignal_COM_Tx_AGSposn</SYSTEM-SIGNAL-REF>
+                        </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      </DATA-MAPPINGS>
+                      <SW-IMPL-MAPPINGS>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_ATS_Std</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_ATS_Std/SwcImplementations/Impl_ATS_Std</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ATS_Std</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                      </SW-IMPL-MAPPINGS>
+                      <SW-MAPPINGS>
+                        <SWC-TO-ECU-MAPPING>
+                          <SHORT-NAME>SwcToEcuMapping_0</SHORT-NAME>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/AC_CluRlyDigOutp</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/AirCdngPSnsrAdcInpSwc</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                          <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/RB/PT/PCFG_SYS/EcuInstances/MDG1</ECU-INSTANCE-REF>
+                        </SWC-TO-ECU-MAPPING>
+                        <SWC-TO-ECU-MAPPING>
+                          <SHORT-NAME>SwcToEcuMapping_MSR2AR</SHORT-NAME>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ATS_Std</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                          <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/RB/PT/PCFG_SYS/EcuInstances/MDG1</ECU-INSTANCE-REF>
+                        </SWC-TO-ECU-MAPPING>
+                      </SW-MAPPINGS>
+                    </SYSTEM-MAPPING>
+                  </MAPPINGS>
+                  <ROOT-SOFTWARE-COMPOSITIONS>
+                    <ROOT-SW-COMPOSITION-PROTOTYPE>
+                      <SHORT-NAME>CPT_MDG1_FlatView</SHORT-NAME>
+                      <FLAT-MAP-REF DEST="FLAT-MAP">/RB/PT/PCT_MDG1_FlatMap/FlatMaps/MDG1_FlatMap</FLAT-MAP-REF>
+                      <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView</SOFTWARE-COMPOSITION-TREF>
+                    </ROOT-SW-COMPOSITION-PROTOTYPE>
+                  </ROOT-SOFTWARE-COMPOSITIONS>
+                  <SYSTEM-VERSION>1.0.0</SYSTEM-VERSION>
+                </SYSTEM>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

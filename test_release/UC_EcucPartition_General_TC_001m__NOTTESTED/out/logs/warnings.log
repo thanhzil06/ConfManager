@@ -1,0 +1,16 @@
+1712641830.7786548,dev,"2024-04-09 07:50:30,778",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712641830.836497,dev,"2024-04-09 07:50:30,836",ERROR,"Argument 'element' has incorrect type (expected lxml.etree._Element, got NoneType)"
+Traceback (most recent call last):
+  File "main.py", line 33, in main
+  File "main.py", line 161, in mode_updater
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 76, in update_ecuc_iref
+TypeError: Argument 'element' has incorrect type (expected lxml.etree._Element, got NoneType)
+1713207169.9180124,dev,"2024-04-15 20:52:49,918",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713207170.0416787,dev,"2024-04-15 20:52:50,041",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713207170.1000292,dev,"2024-04-15 20:52:50,100",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713207170.156877,dev,"2024-04-15 20:52:50,156",ERROR,"list index out of range"
+Traceback (most recent call last):
+  File "main.py", line 35, in main
+  File "main.py", line 61, in ecuc_partiton_updater
+  File "ecuc_partition_handling\ecuc_partition_updater.py", line 35, in port_delta
+IndexError: list index out of range
