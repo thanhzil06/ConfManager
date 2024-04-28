@@ -1,0 +1,28 @@
+1709781049.988804,dev,"2024-03-07 10:10:49,988",ERROR,"Expecting value: line 1 column 1 (char 0)"
+Traceback (most recent call last):
+  File "main.py", line 21, in main
+  File "config_handling\configuration_handling.py", line 30, in read_json_configuration_file
+  File "json\__init__.py", line 293, in load
+  File "json\__init__.py", line 346, in loads
+  File "json\decoder.py", line 337, in decode
+  File "json\decoder.py", line 355, in raw_decode
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+1709783742.7357724,dev,"2024-03-07 10:55:42,735",ERROR,"Expecting value: line 1 column 1 (char 0)"
+Traceback (most recent call last):
+  File "main.py", line 21, in main
+  File "config_handling\configuration_handling.py", line 30, in read_json_configuration_file
+  File "json\__init__.py", line 293, in load
+  File "json\__init__.py", line 346, in loads
+  File "json\decoder.py", line 337, in decode
+  File "json\decoder.py", line 355, in raw_decode
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+1709783984.610711,dev,"2024-03-07 10:59:44,610",ERROR,"[Errno 2] No such file or directory: 'test_structure\\config\\'"
+Traceback (most recent call last):
+  File "main.py", line 21, in main
+  File "config_handling\configuration_handling.py", line 29, in read_json_configuration_file
+FileNotFoundError: [Errno 2] No such file or directory: 'test_structure\\config\\'
+1709784058.9354818,dev,"2024-03-07 11:00:58,935",ERROR,"[Errno 13] Permission denied: 'test_structure\\config'"
+Traceback (most recent call last):
+  File "main.py", line 21, in main
+  File "config_handling\configuration_handling.py", line 29, in read_json_configuration_file
+PermissionError: [Errno 13] Permission denied: 'test_structure\\config'

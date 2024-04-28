@@ -1,0 +1,144 @@
+1712059488.0657797,dev,"2024-04-02 14:04:48,065",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712059488.0962043,dev,"2024-04-02 14:04:48,096",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712059488.110167,dev,"2024-04-02 14:04:48,110",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712059488.1221354,dev,"2024-04-02 14:04:48,122",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712059488.2049127,dev,"2024-04-02 14:04:48,204",ERROR,"'AUTOSAR' object has no attribute 'find'"
+Traceback (most recent call last):
+  File "main.py", line 32, in main
+  File "main.py", line 151, in mode_updater
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 13, in __init__
+AttributeError: 'AUTOSAR' object has no attribute 'find'
+1712060817.1457887,dev,"2024-04-02 14:26:57,145",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060817.1637397,dev,"2024-04-02 14:26:57,163",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060817.1717184,dev,"2024-04-02 14:26:57,171",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060817.1806934,dev,"2024-04-02 14:26:57,180",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060817.251503,dev,"2024-04-02 14:26:57,251",ERROR,"'AUTOSAR' object has no attribute 'find'"
+Traceback (most recent call last):
+  File "main.py", line 32, in main
+  File "main.py", line 151, in mode_updater
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 13, in __init__
+AttributeError: 'AUTOSAR' object has no attribute 'find'
+1712060935.8223932,dev,"2024-04-02 14:28:55,822",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060935.836356,dev,"2024-04-02 14:28:55,836",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060935.8513157,dev,"2024-04-02 14:28:55,851",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060935.863284,dev,"2024-04-02 14:28:55,863",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060935.93908,dev,"2024-04-02 14:28:55,939",ERROR,"'AUTOSAR' object has no attribute 'find'"
+Traceback (most recent call last):
+  File "main.py", line 32, in main
+  File "main.py", line 151, in mode_updater
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 13, in __init__
+AttributeError: 'AUTOSAR' object has no attribute 'find'
+1712060950.39961,dev,"2024-04-02 14:29:10,399",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060950.413574,dev,"2024-04-02 14:29:10,413",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060950.4235466,dev,"2024-04-02 14:29:10,423",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060950.4345176,dev,"2024-04-02 14:29:10,434",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712060950.5492084,dev,"2024-04-02 14:29:10,549",ERROR,"'AUTOSAR' object has no attribute 'find'"
+Traceback (most recent call last):
+  File "main.py", line 32, in main
+  File "main.py", line 151, in mode_updater
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 13, in __init__
+AttributeError: 'AUTOSAR' object has no attribute 'find'
+1712061388.9377959,dev,"2024-04-02 14:36:28,937",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061388.9507618,dev,"2024-04-02 14:36:28,950",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061388.9607344,dev,"2024-04-02 14:36:28,960",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061388.9707172,dev,"2024-04-02 14:36:28,970",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061389.0634592,dev,"2024-04-02 14:36:29,063",ERROR,"'AUTOSAR' object has no attribute 'find'"
+Traceback (most recent call last):
+  File "main.py", line 32, in main
+  File "main.py", line 151, in mode_updater
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 13, in __init__
+AttributeError: 'AUTOSAR' object has no attribute 'find'
+1712061456.640148,dev,"2024-04-02 14:37:36,640",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061456.6531134,dev,"2024-04-02 14:37:36,653",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061456.6670766,dev,"2024-04-02 14:37:36,667",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061456.675054,dev,"2024-04-02 14:37:36,675",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061456.7767813,dev,"2024-04-02 14:37:36,776",ERROR,"'AUTOSAR' object has no attribute 'find'"
+Traceback (most recent call last):
+  File "main.py", line 32, in main
+  File "main.py", line 151, in mode_updater
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 13, in __init__
+AttributeError: 'AUTOSAR' object has no attribute 'find'
+1712061546.7522717,dev,"2024-04-02 14:39:06,752",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061546.7692258,dev,"2024-04-02 14:39:06,769",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061546.7772045,dev,"2024-04-02 14:39:06,777",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061546.7861805,dev,"2024-04-02 14:39:06,786",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061546.8081226,dev,"2024-04-02 14:39:06,808",ERROR,"'AUTOSAR' object has no attribute 'find'"
+Traceback (most recent call last):
+  File "main.py", line 32, in main
+  File "main.py", line 151, in mode_updater
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 13, in __init__
+AttributeError: 'AUTOSAR' object has no attribute 'find'
+1712061644.1699502,dev,"2024-04-02 14:40:44,169",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061644.1859055,dev,"2024-04-02 14:40:44,185",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061644.1958787,dev,"2024-04-02 14:40:44,195",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061644.2068493,dev,"2024-04-02 14:40:44,206",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061644.235772,dev,"2024-04-02 14:40:44,235",ERROR,"'AUTOSAR' object has no attribute 'find'"
+Traceback (most recent call last):
+  File "main.py", line 32, in main
+  File "main.py", line 151, in mode_updater
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 13, in __init__
+AttributeError: 'AUTOSAR' object has no attribute 'find'
+1712061654.167109,dev,"2024-04-02 14:40:54,167",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061654.1840653,dev,"2024-04-02 14:40:54,184",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061654.1950355,dev,"2024-04-02 14:40:54,195",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061654.2055175,dev,"2024-04-02 14:40:54,205",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712061654.2264614,dev,"2024-04-02 14:40:54,226",ERROR,"'AUTOSAR' object has no attribute 'find'"
+Traceback (most recent call last):
+  File "main.py", line 32, in main
+  File "main.py", line 151, in mode_updater
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 13, in __init__
+AttributeError: 'AUTOSAR' object has no attribute 'find'
+1712068392.193187,dev,"2024-04-02 16:33:12,193",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712068392.2839446,dev,"2024-04-02 16:33:12,283",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712068392.3413157,dev,"2024-04-02 16:33:12,341",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712068392.3622599,dev,"2024-04-02 16:33:12,362",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712068392.4171124,dev,"2024-04-02 16:33:12,417",ERROR,"'AUTOSAR' object has no attribute 'find'"
+Traceback (most recent call last):
+  File "main.py", line 32, in main
+  File "main.py", line 151, in mode_updater
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 13, in __init__
+AttributeError: 'AUTOSAR' object has no attribute 'find'
+1712642144.560566,dev,"2024-04-09 07:55:44,560",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712642144.626361,dev,"2024-04-09 07:55:44,626",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712642144.6403246,dev,"2024-04-09 07:55:44,640",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712642144.6592727,dev,"2024-04-09 07:55:44,659",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1712642144.6652849,dev,"2024-04-09 07:55:44,665",ERROR,"list index out of range"
+Traceback (most recent call last):
+  File "main.py", line 33, in main
+  File "main.py", line 155, in mode_updater
+IndexError: list index out of range
+1713173303.7551458,dev,"2024-04-15 11:28:23,755",ERROR,".\in\InitExport does not exist. Please check value given."
+Traceback (most recent call last):
+  File "main.py", line 40, in main
+  File "main.py", line 116, in mode_updater
+  File "confmanager_modes\confmanager_updater.py", line 16, in __init__
+  File "utils\filehandling.py", line 32, in check_if_folder_exists
+ValueError: .\in\InitExport does not exist. Please check value given.
+1713173347.5374084,dev,"2024-04-15 11:29:07,537",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713173347.6893818,dev,"2024-04-15 11:29:07,689",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713173347.743239,dev,"2024-04-15 11:29:07,743",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713173795.7315578,dev,"2024-04-15 11:36:35,731",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713173795.802881,dev,"2024-04-15 11:36:35,802",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713173795.8452759,dev,"2024-04-15 11:36:35,845",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713174550.299321,dev,"2024-04-15 11:49:10,299",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713174550.354175,dev,"2024-04-15 11:49:10,354",ERROR,"'EcucPartition_OsApp_C'"
+Traceback (most recent call last):
+  File "main.py", line 35, in main
+  File "main.py", line 61, in ecuc_partiton_updater
+  File "ecuc_partition_handling\ecuc_partition_updater.py", line 61, in port_delta
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 114, in update_ecuc_iref
+KeyError: 'EcucPartition_OsApp_C'
+1713176534.1605532,dev,"2024-04-15 12:22:14,160",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713176534.224381,dev,"2024-04-15 12:22:14,224",ERROR,"'EcucPartition_OsApp_C'"
+Traceback (most recent call last):
+  File "main.py", line 35, in main
+  File "main.py", line 61, in ecuc_partiton_updater
+  File "ecuc_partition_handling\ecuc_partition_updater.py", line 51, in port_delta
+  File "ecuc_partition_handling\ecuc_partition_parser.py", line 114, in update_ecuc_iref
+KeyError: 'EcucPartition_OsApp_C'
+1713207230.9686213,dev,"2024-04-15 20:53:50,968",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713207231.0689394,dev,"2024-04-15 20:53:51,068",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713207231.1178374,dev,"2024-04-15 20:53:51,117",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713788413.9476902,dev,"2024-04-22 19:20:13,947",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713788413.9975154,dev,"2024-04-22 19:20:13,997",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"
+1713788414.038306,dev,"2024-04-22 19:20:14,038",WARNING,"There are not enough files to merge: please check your configuration file and your inputs"

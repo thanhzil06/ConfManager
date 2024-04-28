@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PCFG_ECU</SHORT-NAME>
+              <ELEMENTS>
+                <SYSTEM>
+                  <SHORT-NAME>MDG1_EXTR</SHORT-NAME>
+                  <CATEGORY>ECU_EXTRACT</CATEGORY>
+                  <MAPPINGS>
+                    <SYSTEM-MAPPING>
+                      <SHORT-NAME>SYSMPG_MDG1</SHORT-NAME>
+                      <SW-IMPL-MAPPINGS/>
+                      <SW-MAPPINGS/>
+                    </SYSTEM-MAPPING>
+                  </MAPPINGS>
+                </SYSTEM>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

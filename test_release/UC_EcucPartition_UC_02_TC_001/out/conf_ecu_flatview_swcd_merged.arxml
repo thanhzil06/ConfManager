@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PCT_MDG1_FlatView</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>SwComponentTypes</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPOSITION-SW-COMPONENT-TYPE>
+                      <SHORT-NAME>MDG1_FlatView</SHORT-NAME>
+                      <PORTS>
+                        <P-PORT-PROTOTYPE>
+                          <SHORT-NAME>PP_COM_Tx_ECM_AGS2_DEMAND</SHORT-NAME>
+                          <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RB/PT/ComVeh/ComScl_EngLin/PortInterfaces/IF_COM_Tx_ECM_AGS2_DEMAND</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE>
+                          <SHORT-NAME>RP_COM_Rx_VSIM_FD_1</SHORT-NAME>
+                          <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RB/PT/ComVeh/ComScl_NetMtrx/PortInterfaces/IF_COM_Rx_VSIM_FD_1</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                      </PORTS>
+                      <COMPONENTS>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>AC_CluRlyDigOutp</SHORT-NAME>
+                          <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/RB/PT/PCT_IoSigDioOutp_SwSStellantis/SwComponentTypes/IoSigDioOutp_SwSStellantis</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE>
+                          <SHORT-NAME>CPT_ATS_Std</SHORT-NAME>
+                          <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/RB/PT/MSR2AR/PCT_ATS_Std/SwComponentTypes/ATS_Std</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                      </COMPONENTS>
+                      <CONNECTORS>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>ASC_CPT_ComDia_Dcm_Rte_Adapter_DataServices_D9E08_VeRPMR_n_EngSpdResl1_CPT_Dcm_DataServices_D9E08_VeRPMR_n_EngSpdResl1</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_ComDia_Dcm_Rte_Adapter</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SwComponentTypes/ComDia_Dcm_Rte_Adapter/SwComponentTypes/ComDia_Dcm_Rte_Adapter/DataServices_D9E08_VeRPMR_n_EngSpdResl1</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DataServices_D9E08_VeRPMR_n_EngSpdResl1</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                        <ASSEMBLY-SW-CONNECTOR>
+                          <SHORT-NAME>ASC_CPT_rba_OsArSchedExtn_OS_PP_rba_OsArSchedExtn_DSM_Reini_TRIGSRC_CPT_rba_OsArSchedExtn_RP_rba_OsArSchedExtn_DSM_Reini_0</SHORT-NAME>
+                          <PROVIDER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_OsArSchedExtn_OS</CONTEXT-COMPONENT-REF>
+                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/PT/MSR2AR/PCT_rba_OsArSchedExtn_OS/SwComponentTypes/rba_OsArSchedExtn_OS/PP_rba_OsArSchedExtn_DSM_Reini_TRIGSRC</TARGET-P-PORT-REF>
+                          </PROVIDER-IREF>
+                          <REQUESTER-IREF>
+                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_rba_OsArSchedExtn</CONTEXT-COMPONENT-REF>
+                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/RB/PT/MSR2AR/PCT_rba_OsArSchedExtn/SwComponentTypes/rba_OsArSchedExtn/RP_rba_OsArSchedExtn_DSM_Reini_TRIGSRC</TARGET-R-PORT-REF>
+                          </REQUESTER-IREF>
+                        </ASSEMBLY-SW-CONNECTOR>
+                      </CONNECTORS>
+                    </COMPOSITION-SW-COMPONENT-TYPE>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

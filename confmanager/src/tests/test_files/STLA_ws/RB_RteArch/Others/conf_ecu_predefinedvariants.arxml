@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-1-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>UBK</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>Project</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>PredefinedVariants</SHORT-NAME>
+                  <ELEMENTS>
+                    <PREDEFINED-VARIANT>
+                      <SHORT-NAME>HO</SHORT-NAME>
+                      <POST-BUILD-VARIANT-CRITERION-VALUE-SET-REFS>
+                        <POST-BUILD-VARIANT-CRITERION-VALUE-SET-REF DEST="POST-BUILD-VARIANT-CRITERION-VALUE-SET">/RB/UBK/Project/PredefinedVariants/PostBuildVariantCriterionValueSet_0</POST-BUILD-VARIANT-CRITERION-VALUE-SET-REF>
+                      </POST-BUILD-VARIANT-CRITERION-VALUE-SET-REFS>
+                    </PREDEFINED-VARIANT>
+                    <PREDEFINED-VARIANT>
+                      <SHORT-NAME>SO</SHORT-NAME>
+                      <POST-BUILD-VARIANT-CRITERION-VALUE-SET-REFS>
+                        <POST-BUILD-VARIANT-CRITERION-VALUE-SET-REF DEST="POST-BUILD-VARIANT-CRITERION-VALUE-SET">/RB/UBK/Project/PredefinedVariants/PostBuildVariantCriterionValueSet_1</POST-BUILD-VARIANT-CRITERION-VALUE-SET-REF>
+                      </POST-BUILD-VARIANT-CRITERION-VALUE-SET-REFS>
+                    </PREDEFINED-VARIANT>
+                    <POST-BUILD-VARIANT-CRITERION-VALUE-SET>
+                      <SHORT-NAME>PostBuildVariantCriterionValueSet_0</SHORT-NAME>
+                      <POST-BUILD-VARIANT-CRITERION-VALUES>
+                        <POST-BUILD-VARIANT-CRITERION-VALUE>
+                          <VARIANT-CRITERION-REF DEST="POST-BUILD-VARIANT-CRITERION">/RB/UBK/Project/PostBuildVariantCriterions/PBSHOSO</VARIANT-CRITERION-REF>
+                          <VALUE>1</VALUE>
+                        </POST-BUILD-VARIANT-CRITERION-VALUE>
+                      </POST-BUILD-VARIANT-CRITERION-VALUES>
+                    </POST-BUILD-VARIANT-CRITERION-VALUE-SET>
+                    <POST-BUILD-VARIANT-CRITERION-VALUE-SET>
+                      <SHORT-NAME>PostBuildVariantCriterionValueSet_1</SHORT-NAME>
+                      <POST-BUILD-VARIANT-CRITERION-VALUES>
+                        <POST-BUILD-VARIANT-CRITERION-VALUE>
+                          <VARIANT-CRITERION-REF DEST="POST-BUILD-VARIANT-CRITERION">/RB/UBK/Project/PostBuildVariantCriterions/PBSHOSO</VARIANT-CRITERION-REF>
+                          <VALUE>2</VALUE>
+                        </POST-BUILD-VARIANT-CRITERION-VALUE>
+                      </POST-BUILD-VARIANT-CRITERION-VALUES>
+                    </POST-BUILD-VARIANT-CRITERION-VALUE-SET>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>PostBuildVariantCriterions</SHORT-NAME>
+                  <ELEMENTS>
+                    <POST-BUILD-VARIANT-CRITERION>
+                      <SHORT-NAME>PBSHOSO</SHORT-NAME>
+                      <COMPU-METHOD-REF DEST="COMPU-METHOD">/RB/UBK/Project/CompuMethods/PBV_PBSHOSO_CompuMethod</COMPU-METHOD-REF>
+                    </POST-BUILD-VARIANT-CRITERION>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                  <SHORT-NAME>CompuMethods</SHORT-NAME>
+                  <ELEMENTS>
+                    <COMPU-METHOD>
+                      <SHORT-NAME>PBV_PBSHOSO_CompuMethod</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">Compu Method for PBSHOSO Variant Criterion</L-4>
+                      </LONG-NAME>
+                      <CATEGORY>TEXTTABLE</CATEGORY>
+                      <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                          <COMPU-SCALE>
+                            <SHORT-LABEL>HO</SHORT-LABEL>
+                            <LOWER-LIMIT>1</LOWER-LIMIT>
+                            <UPPER-LIMIT>1</UPPER-LIMIT>
+                          </COMPU-SCALE>
+                          <COMPU-SCALE>
+                            <SHORT-LABEL>SO</SHORT-LABEL>
+                            <LOWER-LIMIT>2</LOWER-LIMIT>
+                            <UPPER-LIMIT>2</UPPER-LIMIT>
+                          </COMPU-SCALE>
+                        </COMPU-SCALES>
+                      </COMPU-INTERNAL-TO-PHYS>
+                    </COMPU-METHOD>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

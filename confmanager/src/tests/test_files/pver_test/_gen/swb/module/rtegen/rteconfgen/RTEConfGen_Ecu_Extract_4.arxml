@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PCFG_ECU</SHORT-NAME>
+              <ELEMENTS>
+                <SYSTEM>
+                  <SHORT-NAME>MDG1_EXTR</SHORT-NAME>
+                  <CATEGORY>ECU_EXTRACT</CATEGORY>
+                  <MAPPINGS>
+                    <SYSTEM-MAPPING>
+                      <SHORT-NAME>SYSMPG_MDG1</SHORT-NAME>
+                      <DATA-MAPPINGS>
+                        <SENDER-RECEIVER-TO-SIGNAL-GROUP-MAPPING>
+                          <DATA-ELEMENT-IREF>
+                            <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                            <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/Lvl2DataTxSignals</CONTEXT-PORT-REF>
+                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/FCASWCs/Lvl2Data/Lvl2DataTxSignals/Lvl2SftyComTX_AXLE_TORQUE_FD_1_FD14_Pkt</TARGET-DATA-PROTOTYPE-REF>
+                          </DATA-ELEMENT-IREF>
+                          <SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/RB/PT/PCFG_SYS/ComVeh/SystemSignalGroups/SystemSignalGroup_COM_Tx_AXLE_TORQUE_FD_1_FD14_Pkt</SIGNAL-GROUP-REF>
+                          <TYPE-MAPPING>
+                            <SENDER-REC-RECORD-TYPE-MAPPING>
+                              <RECORD-ELEMENT-MAPPINGS>
+                                <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                                  <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/FCASWCs/Lvl2Data/Lvl2DataImpDataType/IDTRAXLE_TORQUE_FD_1_FD14_Pkt/CRC_AXLE_TORQUE_FD_1</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/RB/PT/PCFG_SYS/ComVeh/SystemSignals/SystemSignal_COM_Tx_CRC_AXLE_TORQUE_FD_1_FD14</SYSTEM-SIGNAL-REF>
+                                </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                                <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                                  <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/FCASWCs/Lvl2Data/Lvl2DataImpDataType/IDTRAXLE_TORQUE_FD_1_FD14_Pkt/MessageCounter_AXLE_TORQUE_FD_1</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/RB/PT/PCFG_SYS/ComVeh/SystemSignals/SystemSignal_COM_Tx_MessageCounter_AXLE_TORQUE_FD_1_FD14</SYSTEM-SIGNAL-REF>
+                                </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                                <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                                  <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/FCASWCs/Lvl2Data/Lvl2DataImpDataType/IDTRAXLE_TORQUE_FD_1_FD14_Pkt/Rear_Axle_Regen_Capacity</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/RB/PT/PCFG_SYS/ComVeh/SystemSignals/SystemSignal_COM_Tx_Rear_Axle_Regen_Capacity_FD14</SYSTEM-SIGNAL-REF>
+                                </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                              </RECORD-ELEMENT-MAPPINGS>
+                            </SENDER-REC-RECORD-TYPE-MAPPING>
+                          </TYPE-MAPPING>
+                        </SENDER-RECEIVER-TO-SIGNAL-GROUP-MAPPING>
+                      </DATA-MAPPINGS>
+                      <SW-IMPL-MAPPINGS>
+                        <SWC-TO-IMPL-MAPPING>
+                          <SHORT-NAME>SwcToImplMapping_AVS_Std</SHORT-NAME>
+                          <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/RB/PT/MSR2AR/PCT_rba_OsArSchedExtn_OS/SwcImplementations/Imp_AVS_Std</COMPONENT-IMPLEMENTATION-REF>
+                          <COMPONENT-IREFS>
+                            <COMPONENT-IREF>
+                              <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-COMPOSITION-REF>
+                              <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_AVS_Std</TARGET-COMPONENT-REF>
+                            </COMPONENT-IREF>
+                          </COMPONENT-IREFS>
+                        </SWC-TO-IMPL-MAPPING>
+                      </SW-IMPL-MAPPINGS>
+                    </SYSTEM-MAPPING>
+                  </MAPPINGS>
+                </SYSTEM>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

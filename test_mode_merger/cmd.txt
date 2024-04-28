@@ -1,0 +1,51 @@
+Microsoft Windows [Version 10.0.19045.4046]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\GYH8HC\dev_tool\03_ConfManager_ECUC_Partition\02_test_ws\testt>ConfManager.exe -m Merger -h
+usage: ConfManager.exe [-h] [-v] -m {Merger,Updater} -o OUTPUT_PATH -cf CONF_FILE_PATH -p PVER_ROOT
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program version
+  -m {Merger,Updater}, --mode {Merger,Updater}
+                        modes = Merger, Updater
+  -o OUTPUT_PATH, --output OUTPUT_PATH
+                        folder where merged files and logs are generated
+  -cf CONF_FILE_PATH, --conf CONF_FILE_PATH
+                        configuration file path
+  -p PVER_ROOT, --pver PVER_ROOT
+                        pver root
+
+C:\Users\GYH8HC\dev_tool\03_ConfManager_ECUC_Partition\02_test_ws\testt>ConfManager.exe -m Merger -o C:\Users\GYH8HC\dev_tool\03_ConfManager_ECUC_Partition\02_test_ws\testt\out\ -cf C:\Users\GYH8HC\dev_tool\03_ConfManager_ECUC_Partition\02_test_ws\testt\ConfManager_configuration.json -p C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB
+2024-03-14 14:49:26,398 - dev - INFO - Reading configuration file ConfManager_configuration.json
+2024-03-14 14:49:26,399 - dev - INFO - EcuExtract
+2024-03-14 14:49:26,855 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\Conf\__Conf\conf_ecu_extr.arxml
+2024-03-14 14:49:27,053 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\_gen\swsh\export_volume\root\interface_unsorted\PARTNER\conf_ecu_extr.arxml
+2024-03-14 14:49:27,204 - dev - INFO - Checking differences
+2024-03-14 14:49:27,907 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\_gen\swb\module\rtegen\rteconfgen\RTEConfGen_Ecu_Extract.arxml
+2024-03-14 14:49:27,943 - dev - INFO - Checking differences
+2024-03-14 14:49:28,084 - dev - INFO - Writing final file
+2024-03-14 14:49:28,152 - dev - INFO - FlatView
+2024-03-14 14:49:28,591 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\Conf\__Conf\conf_ecu_flatview_swcd.arxml
+2024-03-14 14:49:30,690 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\_gen\swsh\export_volume\root\interface_unsorted\PARTNER\conf_ecu_flatview_swcd.arxml
+2024-03-14 14:49:32,614 - dev - INFO - Checking differences
+2024-03-14 14:49:40,331 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\_gen\swb\module\rtegen\rteconfgen\RTEConfGen_FlatView_swcd.arxml
+2024-03-14 14:49:40,385 - dev - INFO - Checking differences
+2024-03-14 14:49:43,236 - dev - INFO - Writing final file
+2024-03-14 14:49:43,825 - dev - INFO - FlatMap
+2024-03-14 14:49:44,298 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\Conf\__Conf\conf_ecu_flatmap.arxml
+2024-03-14 14:49:49,075 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\_gen\swsh\export_volume\root\interface_unsorted\PARTNER\conf_ecu_flatmap.arxml
+2024-03-14 14:49:53,328 - dev - INFO - Checking differences
+2024-03-14 14:50:15,991 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\_gen\swb\module\rtegen\rteconfgen\RTEConfGen_FlatMap.arxml
+2024-03-14 14:50:15,997 - dev - INFO - Checking differences
+2024-03-14 14:50:15,999 - dev - INFO - Writing final file
+2024-03-14 14:50:17,662 - dev - INFO - EcuPartition
+2024-03-14 14:50:18,117 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\Conf\__Conf\conf_ecucpartition_ecucvalues.arxml
+2024-03-14 14:50:18,153 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\_gen\swsh\export_volume\root\interface_unsorted\PARTNER\conf_ecucpartition_ecucvalues.arxml
+2024-03-14 14:50:18,167 - dev - INFO - Checking differences
+2024-03-14 14:50:18,213 - dev - INFO - Reading C:\Users\GYH8HC\dev_tool\01_Get_started\Pver\ECS1095_T4EVOTL_STLA_C040C5_RSB\_gen\swb\module\rtegen\rteconfgen\RTEConfGen_EcucPartition_EcucValues.arxml
+2024-03-14 14:50:18,301 - dev - INFO - Checking differences
+2024-03-14 14:50:18,897 - dev - INFO - Writing final file
+Elapsed time: 00h:00m:52.53s
+
+C:\Users\GYH8HC\dev_tool\03_ConfManager_ECUC_Partition\02_test_ws\testt>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE T="2016-08-19T03:38:14+05:30" UUID="4a051aeb-d9ec-480d-a483-f28f10b08425">
+      <SHORT-NAME>FCACompositions</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE T="2018-01-23T12:22:57+05:30" UUID="f495c313-9245-46e2-8fb1-71bc18b59f06">
+          <SHORT-NAME>RootProject</SHORT-NAME>
+          <ELEMENTS>
+            <COMPOSITION-SW-COMPONENT-TYPE T="2018-01-25T21:23:15+05:30" UUID="986cae6f-5daa-4470-a728-a3615249bc1c">
+              <SHORT-NAME>RootProject</SHORT-NAME>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE UUID="ee5eb4df-9ec8-40dd-85e8-e19b52925d67">
+                  <SHORT-NAME>TopLvlComposition</SHORT-NAME>
+                  <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/RB/PT/PCT_TopLvlComposition/SwComponentTypes/TopLvlComposition</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

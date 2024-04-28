@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>PT</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>PCT_MDG1_FlatMap</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>FlatMaps</SHORT-NAME>
+                  <ELEMENTS>
+                    <FLAT-MAP>
+                      <SHORT-NAME>MDG1_FlatMap</SHORT-NAME>
+                      <INSTANCES>
+                        <FLAT-INSTANCE-DESCRIPTOR>
+                          <SHORT-NAME>ESC_dataSyncS0MaxTskLoad</SHORT-NAME>
+                          <ECU-EXTRACT-REFERENCE-IREF>
+                            <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/RB/PT/PCFG_ECU/MDG1_EXTR/CPT_MDG1_FlatView</CONTEXT-ELEMENT-REF>
+                            <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/RB/PT/PCT_MDG1_FlatView/SwComponentTypes/MDG1_FlatView/CPT_esc_tasklink</CONTEXT-ELEMENT-REF>
+                            <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/RB/PT/esc_tasklink/SwComponentTypes/esc_tasklink/IB_esc_tasklink/ESC_dataSyncS0MaxTskLoad</TARGET-REF>
+                          </ECU-EXTRACT-REFERENCE-IREF>
+                          <VARIATION-POINT>
+                            <SHORT-LABEL>ESC_SWTSYNRTMEASMT_SC_EQ_1</SHORT-LABEL>
+                            <SW-SYSCOND BINDING-TIME="CODE-GENERATION-TIME">
+                              (
+                                  (
+                              <SYSC-REF DEST="SW-SYSTEMCONST">/RB/PT/Common/SwSystemconsts/Adjustables/ESC_SWTSYNRTMEASMT_SC</SYSC-REF>
+                              ==1)
+                                )
+                            </SW-SYSCOND>
+                          </VARIATION-POINT>
+                        </FLAT-INSTANCE-DESCRIPTOR>
+                      </INSTANCES>
+                    </FLAT-MAP>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+
